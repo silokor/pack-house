@@ -1186,22 +1186,22 @@ function StickyCTA({ bundle, qty }: { bundle: BundlePreset; qty: number }) {
           {/* 구매 버튼 */}
           <button
             onClick={() => scrollToId("buy-box")}
-            className="w-full py-3.5 font-black flex items-center justify-between px-4 animate-pulse-glow"
+            className="w-full py-4 font-black flex items-center justify-between px-5 animate-pulse-glow"
             style={{ background: PINK, color: "white" }}
           >
             <span className="text-left leading-tight">
-              <div className="text-[11px] opacity-90 font-medium mb-0.5">
+              <div className="text-[12px] opacity-90 font-medium mb-0.5">
                 {bundle.name} × {qty}
               </div>
               <div className="flex items-baseline gap-1.5">
-                <span className="text-[11px] line-through opacity-70">
+                <span className="text-[13px] line-through opacity-70">
                   {formatKRW(baseTotal)}
                 </span>
-                <span className="text-[13px]">{formatKRW(total)}</span>
+                <span className="text-[19px]">{formatKRW(total)}</span>
               </div>
             </span>
-            <span className="text-[12px] flex items-center gap-1">
-              지금 구매 <span>→</span>
+            <span className="text-[18px] font-black flex items-center gap-1.5">
+              지금 구매 <span className="text-[20px]">→</span>
             </span>
           </button>
         </div>
