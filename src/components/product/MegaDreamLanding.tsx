@@ -96,7 +96,7 @@ function S01_Hero() {
         transition={{ duration: 0.6 }}
         className="relative z-10"
       >
-        <h1 className="text-[34px] leading-[1.3] font-black mb-5">
+        <h1 className="text-[26px] leading-[1.3] font-black mb-5">
           박스 한 박스에
           <br />
           <Stroke>27만원</Stroke> 쓰고
@@ -104,7 +104,7 @@ function S01_Hero() {
           후회한 적,
         </h1>
         <h2
-          className="font-black text-[60px] leading-none mb-10 text-glow-pink"
+          className="font-black text-[46px] leading-none mb-10 text-glow-pink"
           style={{ color: PINK, fontStyle: "italic", letterSpacing: "-0.03em" }}
         >
           있으시죠?
@@ -153,44 +153,44 @@ function S01_Hero() {
         </div>
 
         {/* 핵심 카피 */}
-        <p className="text-[20px] leading-relaxed font-bold mt-6 mb-3 text-black/85">
+        <p className="text-[16px] leading-relaxed font-bold mt-6 mb-3 text-black/85">
           박스 통째로 안 사도,
         </p>
         <div className="mb-12">
           <div
-            className="text-[46px] font-black leading-[0.95] tracking-tight mb-4 text-glow-pink"
+            className="text-[34px] font-black leading-[0.95] tracking-tight mb-4 text-glow-pink"
             style={{ color: PINK }}
           >
             MEGA 드림 EX
           </div>
-          <p className="text-[24px] font-black leading-tight">
+          <p className="text-[18px] font-black leading-tight">
             진짜 재미는 <Underline color={YELLOW}>1팩</Underline>부터.
           </p>
         </div>
 
         {/* 가격 */}
-        <div className="text-[14px] text-black/55 mb-3 tracking-widest font-medium">
+        <div className="text-[12px] text-black/55 mb-3 tracking-widest font-medium">
           1팩 10장 · 일본판 랜덤 봉입
         </div>
         <div className="flex items-baseline justify-center gap-3 mb-2">
-          <span className="text-[22px] text-black/40 line-through">
+          <span className="text-[17px] text-black/40 line-through">
             {formatKRW(product.listPriceKRW)}
           </span>
           <span
-            className="text-[13px] font-black px-2 py-1 rounded"
+            className="text-[12px] font-black px-2 py-1 rounded"
             style={{ background: PINK, color: "white" }}
           >
             −43%
           </span>
         </div>
-        <div className="text-[52px] font-black mb-10 leading-none" style={{ color: "#0a0a0a" }}>
+        <div className="text-[42px] font-black mb-10 leading-none" style={{ color: "#0a0a0a" }}>
           {formatKRW(product.priceKRW)}
         </div>
 
         {/* CTA */}
         <button
           onClick={() => scrollToId("bundle-select")}
-          className="w-full py-4 rounded-full font-bold text-[18px] animate-pulse-glow"
+          className="w-full py-4 rounded-full font-bold text-[15px] animate-pulse-glow"
           style={{ background: PINK, color: "white" }}
         >
           지금 1팩 열어보기 →
@@ -205,8 +205,8 @@ function S02_BoxRegret() {
   return (
     <section className="px-5 py-24 relative overflow-hidden">
       <div className="text-center mb-10">
-        <p className="text-[19px] text-black/70 mb-3 font-medium">박스 한 박스를 까봤더니</p>
-        <h2 className="text-[40px] font-black leading-tight">
+        <p className="text-[15px] text-black/70 mb-3 font-medium">박스 한 박스를 까봤더니</p>
+        <h2 className="text-[30px] font-black leading-tight">
           <span style={{ color: PINK }} className="text-glow-pink">꽝 30팩</span>,
           <br />
           힛카드 <Stroke>0장.</Stroke>
@@ -235,8 +235,8 @@ function S02_BoxRegret() {
       </div>
 
       <div className="mt-12 text-center">
-        <p className="text-[24px] font-bold leading-tight">박스 사는 사람,</p>
-        <p className="text-[34px] font-black leading-tight text-glow-pink" style={{ color: PINK }}>
+        <p className="text-[18px] font-bold leading-tight">박스 사는 사람,</p>
+        <p className="text-[26px] font-black leading-tight text-glow-pink" style={{ color: PINK }}>
           호구 됩니다.
         </p>
       </div>
@@ -248,10 +248,10 @@ function S02_BoxRegret() {
 function S03_FactPack() {
   return (
     <section className="px-5 py-24 text-center">
-      <div className="inline-block text-[12px] tracking-[0.3em] text-black/50 mb-3 px-3 py-1 border border-black/15 rounded-full">
+      <div className="inline-block text-[11px] tracking-[0.3em] text-black/50 mb-3 px-3 py-1 border border-black/15 rounded-full">
         ⚠️ WARNING
       </div>
-      <h2 className="text-[34px] font-black leading-tight mb-8">
+      <h2 className="text-[26px] font-black leading-tight mb-8">
         한 박스보다
         <br />
         <span style={{ color: PINK }}>한 팩</span>이 낫다고?
@@ -263,12 +263,12 @@ function S03_FactPack() {
         ["FACT 03", <>1팩 17,000원으로 <Highlight>같은 확률, 1/16 부담.</Highlight> 꽝이면 가볍게, 터지면 메루카리 시세 한방.</>],
       ].map(([k, v], i) => (
         <div key={i} className="glass-card rounded-2xl p-6 mb-4 text-left">
-          <div className="text-[15px] text-black/55 tracking-widest mb-3 font-bold">{k}</div>
-          <p className="text-[19px] leading-relaxed">{v}</p>
+          <div className="text-[13px] text-black/55 tracking-widest mb-3 font-bold">{k}</div>
+          <p className="text-[15px] leading-relaxed">{v}</p>
         </div>
       ))}
 
-      <p className="text-[28px] font-black leading-tight mt-6">
+      <p className="text-[22px] font-black leading-tight mt-6">
         박스값 아낀 돈은
         <br />
         <Underline color={YELLOW}>당신의 다른 즐거움</Underline>에.
@@ -288,7 +288,7 @@ function S04_JapanEdition() {
       <div className="absolute inset-0 radial-burst opacity-40 pointer-events-none" />
 
       <div className="relative z-10">
-        <h2 className="text-[34px] font-black text-center leading-tight mb-6 pt-4">
+        <h2 className="text-[26px] font-black text-center leading-tight mb-6 pt-4">
           진짜 가치는
           <br />
           <span style={{ color: PINK }} className="text-glow-pink">일본판</span>입니다.
@@ -307,15 +307,15 @@ function S04_JapanEdition() {
         <div className="space-y-3 mb-8">
           <CompareRow
             ko={["메가팬텀 ex SAR", <><span className="text-black/55">한국판</span><br /><b>약 380,000원</b></>]}
-            jp={["메가팬텀 ex SAR", <><b style={{ color: PINK, fontSize: 20 }}>{(Math.round(78100 * 2.6 * 9.5 / 1000) * 1000).toLocaleString()}원</b><br /><span className="font-black text-[15px]" style={{ color: PINK }}>약 5.1배 ↑</span></>]}
+            jp={["메가팬텀 ex SAR", <><b style={{ color: PINK, fontSize: 16 }}>{(Math.round(78100 * 2.6 * 9.5 / 1000) * 1000).toLocaleString()}원</b><br /><span className="font-black text-[13px]" style={{ color: PINK }}>약 5.1배 ↑</span></>]}
           />
           <CompareRow
             ko={["피카츄 ex SAR", <><span className="text-black/55">한국판</span><br /><b>약 427,500원</b></>]}
-            jp={["피카츄 ex SAR", <><b style={{ color: PINK, fontSize: 20 }}>{(Math.round(63600 * 2.6 * 9.5 / 1000) * 1000).toLocaleString()}원</b><br /><span className="font-black text-[15px]" style={{ color: PINK }}>약 3.7배 ↑</span></>]}
+            jp={["피카츄 ex SAR", <><b style={{ color: PINK, fontSize: 16 }}>{(Math.round(63600 * 2.6 * 9.5 / 1000) * 1000).toLocaleString()}원</b><br /><span className="font-black text-[13px]" style={{ color: PINK }}>약 3.7배 ↑</span></>]}
           />
           <CompareRow
             ko={["메가망나뇽 ex MUR", <><span className="text-black/55">한국판</span><br /><b>약 380,000원</b></>]}
-            jp={["메가망나뇽 ex MUR", <><b style={{ color: PINK, fontSize: 20 }}>{(Math.round(54750 * 2.4 * 9.5 / 1000) * 1000).toLocaleString()}원</b><br /><span className="font-black text-[15px]" style={{ color: PINK }}>약 3.3배 ↑</span></>]}
+            jp={["메가망나뇽 ex MUR", <><b style={{ color: PINK, fontSize: 16 }}>{(Math.round(54750 * 2.4 * 9.5 / 1000) * 1000).toLocaleString()}원</b><br /><span className="font-black text-[13px]" style={{ color: PINK }}>약 3.3배 ↑</span></>]}
           />
         </div>
 
@@ -323,20 +323,20 @@ function S04_JapanEdition() {
           className="rounded-2xl p-6 mb-8 glow-yellow-border text-center"
           style={{ background: "rgba(255,212,0,0.04)" }}
         >
-          <p className="text-[22px] font-black mb-3" style={{ color: "#0a0a0a" }}>
+          <p className="text-[17px] font-black mb-3" style={{ color: "#0a0a0a" }}>
             같은 한 팩, 다른 가격.
           </p>
-          <div className="text-[16px] text-black/75 leading-relaxed">
+          <div className="text-[13px] text-black/75 leading-relaxed">
             상위 SAR 3장 기준
             <br />
-            일본판이 <b className="text-[22px]" style={{ color: PINK }}>평균 4배</b> 시세
-            <div className="text-[13px] text-black/55 mt-2">
+            일본판이 <b className="text-[17px]" style={{ color: PINK }}>평균 4배</b> 시세
+            <div className="text-[12px] text-black/55 mt-2">
               📊 Mercari 거래가 / 한국 카드몰 평균가
             </div>
           </div>
         </div>
 
-        <p className="text-center text-[28px] font-black leading-tight">
+        <p className="text-center text-[22px] font-black leading-tight">
           어차피 운빨이면,
           <br />
           <span style={{ color: PINK }}>큰 한방</span>이 있는 쪽으로.
@@ -350,7 +350,7 @@ function S04_JapanEdition() {
 function S05_NoSearchPack() {
   return (
     <section className="px-5 py-24 text-center">
-      <h2 className="text-[34px] font-black leading-tight mb-6 pt-4">
+      <h2 className="text-[26px] font-black leading-tight mb-6 pt-4">
         <Stroke>서치팩 의심?</Stroke>
         <br />
         <span style={{ color: PINK }}>일본판엔 없습니다.</span>
@@ -386,10 +386,10 @@ function S05_NoSearchPack() {
         </div>
       </div>
 
-      <p className="text-[16px] text-black/65 leading-relaxed mb-2">
+      <p className="text-[13px] text-black/65 leading-relaxed mb-2">
         뜯기 전에 누가 만진 적 없는,
       </p>
-      <p className="text-[26px] font-black leading-tight">
+      <p className="text-[20px] font-black leading-tight">
         <span style={{ color: PINK }}>진짜 1팩.</span>
       </p>
     </section>
@@ -400,10 +400,10 @@ function S05_NoSearchPack() {
 function S06_BoxVsPack() {
   return (
     <section className="px-5 py-24">
-      <span className="block text-center text-[13px] tracking-[0.3em] text-black/50 font-bold mb-2">
+      <span className="block text-center text-[12px] tracking-[0.3em] text-black/50 font-bold mb-2">
         BOX vs 1 PACK
       </span>
-      <h2 className="text-[32px] font-black text-center leading-tight mb-8">
+      <h2 className="text-[24px] font-black text-center leading-tight mb-8">
         <span style={{ color: PINK }}>한 장</span>으로 끝나는
         <br />
         깔끔한 비교.
@@ -424,7 +424,7 @@ function S06_BoxVsPack() {
         />
       </div>
 
-      <p className="mt-8 text-center text-[18px] text-black/75 leading-relaxed">
+      <p className="mt-8 text-center text-[15px] text-black/75 leading-relaxed">
         둘 다 <b className="text-black">랜덤은 똑같습니다.</b>
         <br />
         <span style={{ color: PINK }} className="font-black">부담없이 시작해보세요.</span>
@@ -438,15 +438,15 @@ function S07_HitPreview({ onCardClick }: { onCardClick: (c: HitCard) => void }) 
   return (
     <section className="px-5 py-24">
       <div className="text-center mb-6">
-        <span className="block text-[13px] tracking-[0.3em] font-bold mb-2" style={{ color: PINK }}>
+        <span className="block text-[12px] tracking-[0.3em] font-bold mb-2" style={{ color: PINK }}>
           WHY THIS PACK
         </span>
-        <h2 className="text-[32px] font-black leading-tight mb-3">
+        <h2 className="text-[24px] font-black leading-tight mb-3">
           이 팩을 여는 이유는,
           <br />
           <span style={{ color: PINK }}>힛카드가 분명해서.</span>
         </h2>
-        <p className="text-[15px] text-black/65 leading-relaxed">
+        <p className="text-[13px] text-black/65 leading-relaxed">
           1팩에서 한 방으로 터질 수 있는<br />
           <b style={{ color: PINK }}>메루카리 거래가</b> TOP 5
         </p>
@@ -463,23 +463,23 @@ function S07_HitPreview({ onCardClick }: { onCardClick: (c: HitCard) => void }) 
               <CardImage card={c} />
             </div>
             <div className="flex items-center gap-1.5 mb-1">
-              <span className="text-[12px] px-1.5 py-0.5 rounded font-bold" style={{ background: PINK, color: "white" }}>
+              <span className="text-[11px] px-1.5 py-0.5 rounded font-bold" style={{ background: PINK, color: "white" }}>
                 #{c.rank}
               </span>
-              <span className="text-[12px] text-black/55">{c.rarity}</span>
+              <span className="text-[11px] text-black/55">{c.rarity}</span>
             </div>
-            <div className="text-[17px] font-bold leading-tight mb-1">{c.nameKo}</div>
-            <div className="text-[13px] text-black/50 mb-2">{c.cardNo}</div>
-            <div className="text-[22px] font-black leading-tight" style={{ color: PINK }}>
+            <div className="text-[14px] font-bold leading-tight mb-1">{c.nameKo}</div>
+            <div className="text-[12px] text-black/50 mb-2">{c.cardNo}</div>
+            <div className="text-[17px] font-black leading-tight" style={{ color: PINK }}>
               {formatKRW(jpyToKrw(c.marketPriceJPY))}
             </div>
-            <div className="text-[13px] text-black/50 mt-0.5">
+            <div className="text-[12px] text-black/50 mt-0.5">
               {formatJPY(c.marketPriceJPY)}
             </div>
           </button>
         ))}
       </div>
-      <p className="text-center text-[14px] text-black/50 mt-4">
+      <p className="text-center text-[12px] text-black/50 mt-4">
         탭하면 Mercari 실거래가로 이동합니다
       </p>
     </section>
@@ -507,17 +507,17 @@ function S08_FullRanking({ onCardClick }: { onCardClick: (c: HitCard) => void })
 
   return (
     <section id="hit-ranking" className="px-5 py-24">
-      <span className="block text-center text-[13px] tracking-[0.3em] font-bold mb-2" style={{ color: PINK }}>
+      <span className="block text-center text-[12px] tracking-[0.3em] font-bold mb-2" style={{ color: PINK }}>
         HIT CARD RANKING
       </span>
-      <h2 className="text-[32px] font-black text-center leading-tight mb-3">
+      <h2 className="text-[24px] font-black text-center leading-tight mb-3">
         메가드림 EX
         <br />
         <span style={{ color: PINK }}>힛카드 시세표</span>
       </h2>
-      <p className="text-center text-[16px] text-black/55 mb-6 leading-relaxed">
+      <p className="text-center text-[13px] text-black/55 mb-6 leading-relaxed">
         메루카리 거래가 기준<br />
-        <span className="text-[14px] text-black/45">탭하면 일본 실거래(Mercari) 페이지로 이동합니다</span>
+        <span className="text-[12px] text-black/45">탭하면 일본 실거래(Mercari) 페이지로 이동합니다</span>
       </p>
 
       <div className="flex gap-2 mb-3 overflow-x-auto hide-scrollbar">
@@ -525,7 +525,7 @@ function S08_FullRanking({ onCardClick }: { onCardClick: (c: HitCard) => void })
           <button
             key={f}
             onClick={() => setFilter(f)}
-            className="shrink-0 px-4 py-2 rounded-full text-[14px] font-bold border transition"
+            className="shrink-0 px-4 py-2 rounded-full text-[12px] font-bold border transition"
             style={
               filter === f
                 ? { background: PINK, borderColor: PINK, color: "white" }
@@ -537,7 +537,7 @@ function S08_FullRanking({ onCardClick }: { onCardClick: (c: HitCard) => void })
         ))}
         <button
           onClick={() => setSort(sort === "price" ? "no" : "price")}
-          className="ml-auto shrink-0 px-3 py-2 rounded-full text-[13px] border border-black/15 text-black/75"
+          className="ml-auto shrink-0 px-3 py-2 rounded-full text-[12px] border border-black/15 text-black/75"
         >
           {sort === "price" ? "↓ 시세순" : "↓ 번호순"}
         </button>
@@ -559,20 +559,20 @@ function S08_FullRanking({ onCardClick }: { onCardClick: (c: HitCard) => void })
               </span>
               <span className="text-[11px] text-black/55">{c.rarity}</span>
             </div>
-            <div className="text-[16px] font-bold leading-tight">{c.nameKo}</div>
-            <div className="text-[12px] text-black/50 mb-1">{c.cardNo}</div>
+            <div className="text-[13px] font-bold leading-tight">{c.nameKo}</div>
+            <div className="text-[11px] text-black/50 mb-1">{c.cardNo}</div>
 
-            <div className="text-[19px] font-black leading-tight" style={{ color: PINK }}>
+            <div className="text-[15px] font-black leading-tight" style={{ color: PINK }}>
               {formatKRW(jpyToKrw(c.marketPriceJPY))}
             </div>
-            <div className="text-[12px] text-black/50">
+            <div className="text-[11px] text-black/50">
               {formatJPY(c.marketPriceJPY)}
             </div>
           </button>
         ))}
       </div>
 
-      <p className="text-center text-[14px] text-black/50 mt-5">
+      <p className="text-center text-[12px] text-black/50 mt-5">
         {CONFIG.priceSource} · 실시간 시세 변동
       </p>
     </section>
@@ -584,38 +584,38 @@ function S09_LiveMarket() {
   return (
     <section className="px-5 py-24">
       <div className="text-center mb-8">
-        <span className="block text-[13px] tracking-[0.3em] font-bold mb-2" style={{ color: PINK }}>
+        <span className="block text-[12px] tracking-[0.3em] font-bold mb-2" style={{ color: PINK }}>
           REAL MARKET
         </span>
-        <h2 className="text-[32px] font-black leading-tight mb-3">
+        <h2 className="text-[24px] font-black leading-tight mb-3">
           저희가 부르는
           <br />
           <span style={{ color: PINK }}>가격이 아닙니다.</span>
         </h2>
-        <p className="text-[15px] text-black/65 leading-relaxed">
+        <p className="text-[13px] text-black/65 leading-relaxed">
           모든 시세는 <b className="text-black">일본 Mercari</b>의<br />
           실제 거래가 기준입니다.
         </p>
       </div>
 
       <div className="glass-card rounded-2xl p-6 text-center glow-pink-border">
-        <div className="text-[16px] text-black/65 mb-2 font-medium">
+        <div className="text-[13px] text-black/65 mb-2 font-medium">
           메가팬텀 ex SAR — 최상위 한방
         </div>
-        <div className="text-[56px] font-black mb-1 leading-none" style={{ color: PINK }}>
+        <div className="text-[44px] font-black mb-1 leading-none" style={{ color: PINK }}>
           {formatKRW(jpyToKrw(hitCards[0].marketPriceJPY))}
         </div>
-        <div className="text-[16px] text-black/65 mb-2 font-medium">
+        <div className="text-[13px] text-black/65 mb-2 font-medium">
           {formatJPY(hitCards[0].marketPriceJPY)}
         </div>
-        <div className="text-[13px] text-black/45 mb-5">
+        <div className="text-[12px] text-black/45 mb-5">
 미감정 시세 {formatJPY(hitCards[0].rawPriceJPY)} → 등급 받으면 약 {CONFIG.psa10Multiplier.SAR}배
         </div>
         <a
           href={hitCards[0].marketUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block text-[14px] text-black/85 underline decoration-black/40 underline-offset-4"
+          className="inline-block text-[12px] text-black/85 underline decoration-black/40 underline-offset-4"
         >
           Mercari 실거래가 확인 ↗
         </a>
@@ -637,10 +637,10 @@ function S10_ProductInfo() {
   ];
   return (
     <section className="px-5 py-24">
-      <span className="block text-center text-[13px] tracking-[0.3em] text-black/50 font-bold mb-2">
+      <span className="block text-center text-[12px] tracking-[0.3em] text-black/50 font-bold mb-2">
         PRODUCT INFO
       </span>
-      <h2 className="text-[28px] font-black text-center leading-tight mb-6">
+      <h2 className="text-[22px] font-black text-center leading-tight mb-6">
         MEGA 드림 ex는
         <br />
         어떤 팩인가요?
@@ -670,20 +670,20 @@ function S10_ProductInfo() {
             style={{ transform: "rotate(-4deg)" }}
           />
         </div>
-        <p className="text-center text-[15px] text-black/55 mt-5 tracking-widest font-bold">
+        <p className="text-center text-[13px] text-black/55 mt-5 tracking-widest font-bold">
           🇯🇵 MEGA DREAM EX · M2a · JAPAN VERSION
         </p>
       </div>
 
       <div className="glass-card rounded-2xl overflow-hidden">
         {rows.map(([k, v], i) => (
-          <div key={k} className={`flex px-5 py-4 text-[17px] ${i !== rows.length - 1 ? "border-b border-black/8" : ""}`}>
+          <div key={k} className={`flex px-5 py-4 text-[14px] ${i !== rows.length - 1 ? "border-b border-black/8" : ""}`}>
             <span className="w-24 shrink-0 text-black/55">{k}</span>
             <span className="text-black/95 font-medium">{v}</span>
           </div>
         ))}
       </div>
-      <p className="mt-5 text-[16px] text-black/70 leading-relaxed">
+      <p className="mt-5 text-[13px] text-black/70 leading-relaxed">
         메가진화 ex 카드와 AR/SAR/MUR 등 수집 가치가 높은 카드가 포함된 일본판
         하이클래스팩입니다.
       </p>
@@ -703,18 +703,18 @@ function S11_BundleSelect({
     <section id="bundle-select" className="px-5 py-24">
       <div className="text-center mb-3">
         <span
-          className="inline-block text-[12px] tracking-[0.3em] font-black px-3 py-1.5 rounded-full"
+          className="inline-block text-[11px] tracking-[0.3em] font-black px-3 py-1.5 rounded-full"
           style={{ background: YELLOW, color: "#0a0a0a" }}
         >
           🎁 구성세트
         </span>
       </div>
-      <h2 className="text-[32px] font-black text-center leading-tight mb-3">
+      <h2 className="text-[24px] font-black text-center leading-tight mb-3">
         팩만 사면 끝?
         <br />
         <span style={{ color: PINK }}>터졌을 때</span>가 진짜.
       </h2>
-      <p className="text-center text-[15px] text-black/65 mb-8 leading-relaxed">
+      <p className="text-center text-[13px] text-black/65 mb-8 leading-relaxed">
         SAR 한 장 80만원짜리가 뜯자마자 휜다면?
         <br />
         <span className="text-black/50">탑로더/슬리브는 옵션이 아니라 보험입니다.</span>
@@ -744,22 +744,22 @@ function S11_BundleSelect({
                   >
                     {active && <div className="w-2.5 h-2.5 rounded-full bg-white" />}
                   </div>
-                  <div className="text-[20px] font-black">{p.name}</div>
+                  <div className="text-[16px] font-black">{p.name}</div>
                 </div>
                 {p.badge && (
                   <span
-                    className="text-[13px] px-2.5 py-1 rounded-full font-black"
+                    className="text-[12px] px-2.5 py-1 rounded-full font-black"
                     style={{ background: YELLOW, color: "#0a0a0a" }}
                   >
                     {p.badge}
                   </span>
                 )}
               </div>
-              <p className="text-[15px] text-black/60 mb-3 pl-9">{p.tagline}</p>
+              <p className="text-[13px] text-black/60 mb-3 pl-9">{p.tagline}</p>
 
               <ul className="space-y-1.5 mb-4 pl-9">
                 {p.includes.map((it, i) => (
-                  <li key={i} className="text-[16px] text-black/85 leading-snug">
+                  <li key={i} className="text-[13px] text-black/85 leading-snug">
                     · {it}
                   </li>
                 ))}
@@ -767,15 +767,15 @@ function S11_BundleSelect({
 
               <div className="pl-9 flex items-baseline gap-2 flex-wrap">
                 {save > 0 && (
-                  <span className="text-[15px] text-black/40 line-through">
+                  <span className="text-[13px] text-black/40 line-through">
                     {formatKRW(p.basePriceKRW)}
                   </span>
                 )}
-                <span className="text-[26px] font-black leading-none" style={{ color: active ? PINK : "white" }}>
+                <span className="text-[20px] font-black leading-none" style={{ color: active ? PINK : "white" }}>
                   {formatKRW(p.finalPriceKRW)}
                 </span>
                 {save > 0 && (
-                  <span className="text-[13px] font-black px-2 py-0.5 rounded" style={{ background: PINK, color: "white" }}>
+                  <span className="text-[12px] font-black px-2 py-0.5 rounded" style={{ background: PINK, color: "white" }}>
                     −{formatKRW(save)}
                   </span>
                 )}
@@ -787,17 +787,17 @@ function S11_BundleSelect({
 
       {/* 개별 옵션 안내 */}
       <div className="mt-6 glass-card rounded-2xl p-5">
-        <div className="text-[14px] text-black/55 tracking-widest mb-3 font-bold">개별 옵션</div>
+        <div className="text-[12px] text-black/55 tracking-widest mb-3 font-bold">개별 옵션</div>
         <div className="space-y-3">
           {bundleOptions.map((o) => (
             <div key={o.id} className="flex items-start justify-between gap-3 pb-3 border-b border-black/8 last:border-0 last:pb-0">
               <div>
-                <div className="text-[16px] font-bold mb-0.5">{o.name}</div>
-                <div className="text-[14px] text-black/55 leading-snug">{o.desc}</div>
+                <div className="text-[13px] font-bold mb-0.5">{o.name}</div>
+                <div className="text-[12px] text-black/55 leading-snug">{o.desc}</div>
               </div>
               <div className="text-right shrink-0">
-                <div className="text-[14px] text-black/40 line-through">{formatKRW(o.priceKRW)}</div>
-                <div className="text-[16px] font-bold" style={{ color: PINK }}>
+                <div className="text-[12px] text-black/40 line-through">{formatKRW(o.priceKRW)}</div>
+                <div className="text-[13px] font-bold" style={{ color: PINK }}>
                   세트 {formatKRW(o.bundlePriceKRW)}
                 </div>
               </div>
@@ -820,10 +820,10 @@ function S12_TrustNotice() {
   ];
   return (
     <section className="px-5 py-24">
-      <span className="block text-center text-[13px] tracking-[0.3em] font-bold mb-2" style={{ color: PINK }}>
+      <span className="block text-center text-[12px] tracking-[0.3em] font-bold mb-2" style={{ color: PINK }}>
         BEFORE YOU BUY
       </span>
-      <h2 className="text-[28px] font-black text-center leading-tight mb-8">
+      <h2 className="text-[22px] font-black text-center leading-tight mb-8">
         랜덤팩 구매 전,
         <br />
         꼭 확인하세요.
@@ -831,8 +831,8 @@ function S12_TrustNotice() {
       <div className="space-y-2.5">
         {checks.map((c, i) => (
           <div key={i} className="glass-card rounded-xl px-5 py-4 flex gap-3 items-start">
-            <span style={{ color: PINK }} className="text-[18px] mt-0.5 font-black">✓</span>
-            <span className="text-[17px] text-black/90 leading-relaxed">{c}</span>
+            <span style={{ color: PINK }} className="text-[15px] mt-0.5 font-black">✓</span>
+            <span className="text-[14px] text-black/90 leading-relaxed">{c}</span>
           </div>
         ))}
       </div>
@@ -853,19 +853,19 @@ function S13_FAQ() {
   ];
   return (
     <section className="px-5 py-24">
-      <span className="block text-center text-[13px] tracking-[0.3em] text-black/50 font-bold mb-2">FAQ</span>
-      <h2 className="text-[28px] font-black text-center mb-8">자주 묻는 질문</h2>
+      <span className="block text-center text-[12px] tracking-[0.3em] text-black/50 font-bold mb-2">FAQ</span>
+      <h2 className="text-[22px] font-black text-center mb-8">자주 묻는 질문</h2>
       <div className="space-y-3">
         {qas.map((qa, i) => (
           <details key={i} className="glass-card rounded-2xl px-5 py-4 group">
             <summary className="flex items-center justify-between cursor-pointer list-none gap-3">
-              <span className="text-[17px] font-bold flex gap-2 flex-1">
+              <span className="text-[14px] font-bold flex gap-2 flex-1">
                 <span style={{ color: PINK }}>Q.</span>
                 {qa.q}
               </span>
               <span className="text-black/50 group-open:rotate-180 transition shrink-0">▾</span>
             </summary>
-            <p className="mt-3 text-[16px] text-black/80 leading-relaxed pl-6">{qa.a}</p>
+            <p className="mt-3 text-[13px] text-black/80 leading-relaxed pl-6">{qa.a}</p>
           </details>
         ))}
       </div>
@@ -917,42 +917,42 @@ function S14_BuyBox({
       <div className="glass-card rounded-3xl p-6 glow-pink-border">
         <div className="flex items-center justify-between mb-4">
           <div>
-            <div className="text-[13px] text-black/55 mb-1">선택: {bundle.name}</div>
+            <div className="text-[12px] text-black/55 mb-1">선택: {bundle.name}</div>
             <div className="flex items-baseline gap-2">
-              <span className="text-[18px] text-black/40 line-through">
+              <span className="text-[15px] text-black/40 line-through">
                 {formatKRW(bundle.basePriceKRW)}
               </span>
-              <span className="text-[12px] font-black px-1.5 py-0.5 rounded" style={{ background: PINK, color: "white" }}>
+              <span className="text-[11px] font-black px-1.5 py-0.5 rounded" style={{ background: PINK, color: "white" }}>
                 −{Math.round((1 - bundle.finalPriceKRW / bundle.basePriceKRW) * 100)}%
               </span>
             </div>
-            <div className="text-[36px] font-black leading-tight">{formatKRW(bundle.finalPriceKRW)}</div>
+            <div className="text-[26px] font-black leading-tight">{formatKRW(bundle.finalPriceKRW)}</div>
           </div>
           <div className="text-right">
-            <div className="text-[12px] font-bold mb-1" style={{ color: PINK }}>LIMITED</div>
-            <div className="text-[12px] text-black/45">DROP SYSTEM</div>
+            <div className="text-[11px] font-bold mb-1" style={{ color: PINK }}>LIMITED</div>
+            <div className="text-[11px] text-black/45">DROP SYSTEM</div>
           </div>
         </div>
 
         <div className="flex items-center justify-between mb-4 py-3 border-t border-black/12">
-          <span className="text-[17px] text-black/75">수량</span>
+          <span className="text-[14px] text-black/75">수량</span>
           <div className="flex items-center gap-3">
             <button onClick={() => setQty(Math.max(1, qty - 1))} className="w-10 h-10 rounded-full border border-black/15 text-xl">−</button>
-            <span className="w-8 text-center text-[18px] font-bold">{qty}</span>
+            <span className="w-8 text-center text-[15px] font-bold">{qty}</span>
             <button onClick={() => setQty(Math.min(10, qty + 1))} className="w-10 h-10 rounded-full border border-black/15 text-xl">+</button>
           </div>
         </div>
 
         <div className="flex items-center justify-between mb-5 pb-4 border-b border-black/12">
-          <span className="text-[17px] text-black/75">
+          <span className="text-[14px] text-black/75">
             결제 금액
             {save > 0 && qty >= 1 && (
-              <span className="block text-[13px] text-black/45 mt-0.5">
+              <span className="block text-[12px] text-black/45 mt-0.5">
                 정가 대비 {formatKRW(save)} 할인
               </span>
             )}
           </span>
-          <span className="text-[26px] font-black leading-none" style={{ color: PINK }}>
+          <span className="text-[20px] font-black leading-none" style={{ color: PINK }}>
             {formatKRW(total)}
           </span>
         </div>
@@ -960,35 +960,35 @@ function S14_BuyBox({
         {/* 구매자 정보 */}
         <div className="space-y-2.5 mb-5">
           <div>
-            <label className="block text-[13px] text-black/55 mb-1.5 font-medium">구매자 이름</label>
+            <label className="block text-[12px] text-black/55 mb-1.5 font-medium">구매자 이름</label>
             <input
               type="text"
               value={buyerName}
               onChange={(e) => setBuyerName(e.target.value)}
               placeholder="홍길동"
-              className="w-full px-4 py-3 rounded-xl border border-black/15 text-[15px] focus:outline-none focus:border-[#FF5BA8]"
+              className="w-full px-4 py-3 rounded-xl border border-black/15 text-[13px] focus:outline-none focus:border-[#FF5BA8]"
               autoComplete="name"
             />
           </div>
           <div>
-            <label className="block text-[13px] text-black/55 mb-1.5 font-medium">연락처</label>
+            <label className="block text-[12px] text-black/55 mb-1.5 font-medium">연락처</label>
             <input
               type="tel"
               value={buyerTel}
               onChange={(e) => setBuyerTel(e.target.value)}
               placeholder="010-0000-0000"
-              className="w-full px-4 py-3 rounded-xl border border-black/15 text-[15px] focus:outline-none focus:border-[#FF5BA8]"
+              className="w-full px-4 py-3 rounded-xl border border-black/15 text-[13px] focus:outline-none focus:border-[#FF5BA8]"
               autoComplete="tel"
             />
           </div>
           <div>
-            <label className="block text-[13px] text-black/55 mb-1.5 font-medium">이메일 (선택)</label>
+            <label className="block text-[12px] text-black/55 mb-1.5 font-medium">이메일 (선택)</label>
             <input
               type="email"
               value={buyerEmail}
               onChange={(e) => setBuyerEmail(e.target.value)}
               placeholder="you@example.com"
-              className="w-full px-4 py-3 rounded-xl border border-black/15 text-[15px] focus:outline-none focus:border-[#FF5BA8]"
+              className="w-full px-4 py-3 rounded-xl border border-black/15 text-[13px] focus:outline-none focus:border-[#FF5BA8]"
               autoComplete="email"
             />
           </div>
@@ -997,13 +997,13 @@ function S14_BuyBox({
         <button
           onClick={handlePay}
           disabled={paying}
-          className="w-full py-4 rounded-full font-bold text-[17px] mb-2.5 animate-pulse-glow disabled:opacity-60 disabled:cursor-not-allowed"
+          className="w-full py-4 rounded-full font-bold text-[14px] mb-2.5 animate-pulse-glow disabled:opacity-60 disabled:cursor-not-allowed"
           style={{ background: PINK, color: "white" }}
         >
           {paying ? "결제창 준비중…" : `${formatKRW(total)} 결제하기`}
         </button>
 
-        <div className="mt-5 text-[13px] text-black/50 leading-relaxed space-y-1.5">
+        <div className="mt-5 text-[12px] text-black/50 leading-relaxed space-y-1.5">
           <p>• 신용카드 결제 — 건흥페이먼츠(GH Payments)</p>
           <p>• 개봉 전 상품 기준 교환/환불 가능</p>
           <p>• 개봉 후 랜덤 상품 특성상 단순 변심 환불 제한</p>
@@ -1023,35 +1023,35 @@ function S15_FinalCTA({ bundle }: { bundle: BundlePreset }) {
         style={{ background: `radial-gradient(circle, ${PINK} 0%, transparent 70%)` }}
       />
       <div className="relative z-10">
-        <p className="text-[16px] text-black/55 mb-4">박스 안 사도 됩니다.</p>
-        <h2 className="text-[38px] font-black leading-tight mb-6">
+        <p className="text-[13px] text-black/55 mb-4">박스 안 사도 됩니다.</p>
+        <h2 className="text-[28px] font-black leading-tight mb-6">
           메가드림 EX,
           <br />
           <span style={{ color: PINK }} className="text-glow-pink">1팩</span>부터.
         </h2>
-        <p className="text-[15px] text-black/50 mb-2">선택: {bundle.name}</p>
+        <p className="text-[13px] text-black/50 mb-2">선택: {bundle.name}</p>
         <div className="flex items-baseline justify-center gap-2 mb-2">
-          <span className="text-[20px] text-black/50 line-through">
+          <span className="text-[16px] text-black/50 line-through">
             {formatKRW(bundle.basePriceKRW)}
           </span>
-          <span className="text-[13px] font-black px-2 py-0.5 rounded" style={{ background: PINK, color: "white" }}>
+          <span className="text-[12px] font-black px-2 py-0.5 rounded" style={{ background: PINK, color: "white" }}>
             −{Math.round((1 - bundle.finalPriceKRW / bundle.basePriceKRW) * 100)}%
           </span>
         </div>
-        <div className="text-[52px] font-black mb-3 leading-none" style={{ color: "#0a0a0a" }}>
+        <div className="text-[42px] font-black mb-3 leading-none" style={{ color: "#0a0a0a" }}>
           {formatKRW(bundle.finalPriceKRW)}
         </div>
-        <p className="text-[14px] mb-6 font-bold" style={{ color: "#E60020" }}>
+        <p className="text-[12px] mb-6 font-bold" style={{ color: "#E60020" }}>
           🔥 마지막 특가 — 잠시 후 정가 복귀
         </p>
         <button
           onClick={() => scrollToId("buy-box")}
-          className="w-full max-w-[320px] py-4 rounded-full font-bold text-[18px] animate-pulse-glow mx-auto block"
+          className="w-full max-w-[320px] py-4 rounded-full font-bold text-[15px] animate-pulse-glow mx-auto block"
           style={{ background: PINK, color: "white" }}
         >
           지금 1팩 열기 →
         </button>
-        <p className="mt-5 text-[13px] text-black/50">
+        <p className="mt-5 text-[12px] text-black/50">
           랜덤 봉입 · 특정 카드 당첨 보장 없음
         </p>
       </div>
@@ -1147,7 +1147,7 @@ function StickyCTA({ bundle, qty }: { bundle: BundlePreset; qty: number }) {
           <div className="px-4 pt-2.5 pb-2">
             <div className="flex items-center justify-between gap-2 mb-2">
               <div className="flex items-center gap-1.5 shrink min-w-0">
-                <span className="text-[14px] shrink-0">🔥</span>
+                <span className="text-[12px] shrink-0">🔥</span>
                 <span
                   className="text-[11px] font-black tracking-wide whitespace-nowrap"
                   style={{ color: urgent ? "#FF4D6A" : "#FFD400" }}
@@ -1159,9 +1159,9 @@ function StickyCTA({ bundle, qty }: { bundle: BundlePreset; qty: number }) {
                 className="flex items-baseline gap-0.5 font-mono font-black tabular-nums shrink-0"
                 style={{ color: urgent ? "#FF4D6A" : "#fff" }}
               >
-                <span className="text-[15px] px-1.5 py-0.5 rounded bg-white/10 w-[30px] text-center inline-block">{mm}</span>
-                <span className="text-[14px]">:</span>
-                <span className="text-[15px] px-1.5 py-0.5 rounded bg-white/10 w-[30px] text-center inline-block">{ss}</span>
+                <span className="text-[13px] px-1.5 py-0.5 rounded bg-white/10 w-[30px] text-center inline-block">{mm}</span>
+                <span className="text-[12px]">:</span>
+                <span className="text-[13px] px-1.5 py-0.5 rounded bg-white/10 w-[30px] text-center inline-block">{ss}</span>
                 <span className="text-[11px] opacity-80 ml-0.5 w-[22px] inline-block">.{ms}</span>
               </div>
             </div>
@@ -1197,10 +1197,10 @@ function StickyCTA({ bundle, qty }: { bundle: BundlePreset; qty: number }) {
                 <span className="text-[11px] line-through opacity-70">
                   {formatKRW(baseTotal)}
                 </span>
-                <span className="text-[16px]">{formatKRW(total)}</span>
+                <span className="text-[13px]">{formatKRW(total)}</span>
               </div>
             </span>
-            <span className="text-[14px] flex items-center gap-1">
+            <span className="text-[12px] flex items-center gap-1">
               지금 구매 <span>→</span>
             </span>
           </button>
@@ -1221,10 +1221,10 @@ function HitCardModal({ card, onClose }: { card: HitCard; onClose: () => void })
       >
         <div className="flex justify-between items-start mb-4">
           <div>
-            <span className="inline-block text-[12px] px-2 py-0.5 rounded font-bold mb-2" style={{ background: PINK, color: "white" }}>
+            <span className="inline-block text-[11px] px-2 py-0.5 rounded font-bold mb-2" style={{ background: PINK, color: "white" }}>
               RANK #{card.rank}
             </span>
-            <div className="text-[12px] text-black/50">{card.label}</div>
+            <div className="text-[11px] text-black/50">{card.label}</div>
           </div>
           <button onClick={onClose} className="text-black/55 text-xl px-2">✕</button>
         </div>
@@ -1234,12 +1234,12 @@ function HitCardModal({ card, onClose }: { card: HitCard; onClose: () => void })
         </div>
 
         <div className="space-y-1 mb-5 text-center">
-          <div className="text-[22px] font-black">{card.nameKo}</div>
-          <div className="text-[14px] text-black/55">{card.nameJa}</div>
-          <div className="text-[13px] text-black/40">{card.nameEn}</div>
+          <div className="text-[17px] font-black">{card.nameKo}</div>
+          <div className="text-[12px] text-black/55">{card.nameJa}</div>
+          <div className="text-[12px] text-black/40">{card.nameEn}</div>
         </div>
 
-        <div className="grid grid-cols-2 gap-2 text-[14px] mb-5">
+        <div className="grid grid-cols-2 gap-2 text-[12px] mb-5">
           <InfoCell k="레어도" v={card.rarity} />
           <InfoCell k="카드번호" v={card.cardNo} />
           <InfoCell k="기준일" v={CONFIG.priceBaseDate} />
@@ -1247,31 +1247,31 @@ function HitCardModal({ card, onClose }: { card: HitCard; onClose: () => void })
         </div>
 
         <div className="glass-card rounded-2xl p-5 mb-4 text-center">
-          <div className="text-[15px] text-black/55 mb-3 font-medium">메루카리 거래가</div>
-          <div className="text-[40px] font-black leading-none text-glow-pink" style={{ color: PINK }}>
+          <div className="text-[13px] text-black/55 mb-3 font-medium">메루카리 거래가</div>
+          <div className="text-[30px] font-black leading-none text-glow-pink" style={{ color: PINK }}>
             {formatKRW(jpyToKrw(card.marketPriceJPY))}
           </div>
-          <div className="text-[14px] text-black/55 mt-2 font-medium">
+          <div className="text-[12px] text-black/55 mt-2 font-medium">
             {formatJPY(card.marketPriceJPY)} (Mercari)
           </div>
-          <div className="text-[12px] text-black/45 mt-2 pt-2 border-t border-black/8">
+          <div className="text-[11px] text-black/45 mt-2 pt-2 border-t border-black/8">
             미감정 raw 시세 {formatJPY(card.rawPriceJPY)}
             <br />
 <span className="text-black/35">등급 받으면 약 {(card.marketPriceJPY/card.rawPriceJPY).toFixed(1)}배</span>
           </div>
-          <div className="text-[12px] text-black/40 mt-2">※ 시세는 실시간 변동 가능</div>
+          <div className="text-[11px] text-black/40 mt-2">※ 시세는 실시간 변동 가능</div>
         </div>
 
         <a
           href={card.marketUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full block text-center py-3.5 rounded-full font-bold text-[16px] mb-2"
+          className="w-full block text-center py-3.5 rounded-full font-bold text-[13px] mb-2"
           style={{ background: PINK, color: "white" }}
         >
           Mercari 실거래가 보기 ↗
         </a>
-        <button onClick={onClose} className="w-full py-3 rounded-full text-[15px] border border-black/15 text-black/75">
+        <button onClick={onClose} className="w-full py-3 rounded-full text-[13px] border border-black/15 text-black/75">
           닫기
         </button>
       </motion.div>
@@ -1298,16 +1298,16 @@ function CompareCard({
       className={`rounded-2xl p-4 ${highlight ? "glow-pink-border" : "border border-black/12"} ${dim ? "opacity-60" : ""}`}
       style={{ background: highlight ? "rgba(255,91,168,0.08)" : "#fafafa" }}
     >
-      <div className="text-[15px] text-black/60 mb-1.5 font-bold">{title}</div>
+      <div className="text-[13px] text-black/60 mb-1.5 font-bold">{title}</div>
       <div
-        className={`text-[24px] font-black mb-4 ${dim ? "line-through text-black/55" : ""}`}
+        className={`text-[18px] font-black mb-4 ${dim ? "line-through text-black/55" : ""}`}
         style={highlight ? { color: PINK } : {}}
       >
         {price}
       </div>
       <ul className="space-y-2">
         {items.map((it, i) => (
-          <li key={i} className="text-[15px] leading-snug text-black/90">{it}</li>
+          <li key={i} className="text-[13px] leading-snug text-black/90">{it}</li>
         ))}
       </ul>
     </div>
@@ -1320,12 +1320,12 @@ function CompareRow({
   return (
     <div className="grid grid-cols-2 gap-2">
       <div className="rounded-xl p-4 border border-black/15 opacity-70">
-        <div className="text-[13px] text-black/55 mb-2 font-bold">🇰🇷 {ko[0]}</div>
-        <div className="text-[14px] text-black/75 leading-relaxed">{ko[1]}</div>
+        <div className="text-[12px] text-black/55 mb-2 font-bold">🇰🇷 {ko[0]}</div>
+        <div className="text-[12px] text-black/75 leading-relaxed">{ko[1]}</div>
       </div>
       <div className="rounded-xl p-4" style={{ background: "rgba(255,91,168,0.08)", border: `1.5px solid ${PINK}88` }}>
-        <div className="text-[13px] mb-2 font-bold" style={{ color: PINK }}>🇯🇵 {jp[0]}</div>
-        <div className="text-[14px] text-black leading-relaxed">{jp[1]}</div>
+        <div className="text-[12px] mb-2 font-bold" style={{ color: PINK }}>🇯🇵 {jp[0]}</div>
+        <div className="text-[12px] text-black leading-relaxed">{jp[1]}</div>
       </div>
     </div>
   );
@@ -1375,15 +1375,15 @@ function FakeReview({
   return (
     <div className="glass-card rounded-2xl p-5">
       <div className="flex items-center gap-3 mb-3">
-        <div className="w-12 h-12 rounded-full bg-black/5 flex items-center justify-center text-[16px] font-bold">
+        <div className="w-12 h-12 rounded-full bg-black/5 flex items-center justify-center text-[13px] font-bold">
           {name[0]}
         </div>
         <div>
-          <div className="text-[17px] font-bold">{name}</div>
-          <div className="text-[14px] text-black/50">{tag}</div>
+          <div className="text-[14px] font-bold">{name}</div>
+          <div className="text-[12px] text-black/50">{tag}</div>
         </div>
       </div>
-      <p className="text-[16px] leading-relaxed text-black/85 whitespace-pre-line">
+      <p className="text-[13px] leading-relaxed text-black/85 whitespace-pre-line">
         {renderBody(body)}
       </p>
     </div>
@@ -1394,14 +1394,14 @@ function Reassure({ n, title, body }: { n: string; title: string; body: string }
   return (
     <div className="flex gap-3 items-start">
       <div
-        className="text-[13px] font-black w-8 h-8 rounded-full flex items-center justify-center shrink-0"
+        className="text-[12px] font-black w-8 h-8 rounded-full flex items-center justify-center shrink-0"
         style={{ background: PINK, color: "white" }}
       >
         {n}
       </div>
       <div>
-        <div className="text-[18px] font-bold mb-1.5">{title}</div>
-        <div className="text-[16px] text-black/75 leading-relaxed">{body}</div>
+        <div className="text-[15px] font-bold mb-1.5">{title}</div>
+        <div className="text-[13px] text-black/75 leading-relaxed">{body}</div>
       </div>
     </div>
   );
