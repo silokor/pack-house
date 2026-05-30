@@ -121,15 +121,15 @@ function SetTile({ item: s }: { item: SetCardItem }) {
       href={`/sets/${s.code}?edition=${s.edition}`}
       className="card-hover group block bg-[var(--bg-elev)] rounded-xl overflow-hidden border border-black/5"
     >
-      <div className="relative aspect-[3/4] bg-gradient-to-br from-black/[0.02] to-black/[0.05] flex items-center justify-center p-4">
+      <div className="relative aspect-[3/4] bg-gradient-to-br from-black/[0.02] to-black/[0.05] flex items-center justify-center">
         {s.boxImage ? (
           <SmartImage
             src={s.boxImage}
             alt={s.name_ko}
-            width={180}
-            height={180}
-            containerClassName="w-[70%] h-[70%] flex items-center justify-center"
-            className="w-auto max-h-full max-w-full object-contain drop-shadow-[0_8px_20px_rgba(0,0,0,0.7)]"
+            width={240}
+            height={320}
+            containerClassName="w-full h-full flex items-center justify-center"
+            className="w-full h-full object-contain"
           />
         ) : (
           <Image
