@@ -143,7 +143,7 @@ function SetTile({ item: s }: { item: SetCardItem }) {
         )}
         {/* 에디션 뱃지 */}
         <span
-          className="absolute top-2 left-2 text-[9px] font-black px-1.5 py-0.5 rounded text-black tracking-wider"
+          className="absolute top-2 left-2 text-[9px] font-black px-1.5 py-0.5 rounded text-white tracking-wider"
           style={{ background: editionColor }}
         >
           {editionLabel}
@@ -151,10 +151,9 @@ function SetTile({ item: s }: { item: SetCardItem }) {
         {/* 차익률 뱃지 */}
         {premiumLabel && (
           <span
-            className="absolute top-2 right-2 text-[10px] font-black px-1.5 py-0.5 rounded tracking-wider"
+            className="absolute top-2 right-2 text-[10px] font-black px-1.5 py-0.5 rounded tracking-wider text-white"
             style={{
-              background: isHot ? "var(--accent)" : isDown ? "rgba(255,255,255,0.1)" : "rgba(255,255,255,0.15)",
-              color: isHot ? "#000" : isDown ? "rgba(255,255,255,0.5)" : "#fff",
+              background: isHot ? "var(--accent)" : isDown ? "rgba(0,0,0,0.45)" : "rgba(0,0,0,0.6)",
             }}
           >
             {premiumLabel}

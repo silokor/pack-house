@@ -181,14 +181,14 @@ function CardTile({ card: c }: { card: CardEnriched }) {
         {/* 에디션 + rarity 뱃지 */}
         <div className="absolute top-2 left-2 right-2 flex justify-between items-start">
           <span
-            className="text-[9px] font-black px-1.5 py-0.5 rounded text-black tracking-wider"
+            className="text-[9px] font-black px-1.5 py-0.5 rounded text-white tracking-wider"
             style={{ background: editionColor }}
           >
             {editionLabel}
           </span>
           {c.rarity && (
             <span
-              className="text-[10px] font-black px-2 py-0.5 rounded text-black tracking-wider"
+              className="text-[10px] font-black px-2 py-0.5 rounded text-white tracking-wider"
               style={{ background: isTopTier ? "var(--accent-2)" : "var(--accent)" }}
             >
               {c.rarity}
