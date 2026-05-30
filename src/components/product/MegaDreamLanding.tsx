@@ -1134,22 +1134,22 @@ function StickyCTA({ bundle, qty }: { bundle: BundlePreset; qty: number }) {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 pointer-events-none">
-      <div className="mx-auto max-w-[440px] px-3 pb-3 pt-3 pointer-events-auto">
-        {/* 통합 검정 카드 — 라이트 배경 위에 강한 도장처럼 박힘 */}
+      <div className="w-full pointer-events-auto">
+        {/* 통합 검정 카드 — 바닥/좌우 풀폭, 라운드 없이 */}
         <div
-          className="rounded-2xl overflow-hidden"
+          className="overflow-hidden"
           style={{
             background: "#0a0a0a",
-            boxShadow: "0 -8px 30px rgba(0,0,0,0.18), 0 12px 40px rgba(255,91,168,0.35)",
+            boxShadow: "0 -8px 30px rgba(0,0,0,0.18), 0 -2px 14px rgba(255,91,168,0.25)",
           }}
         >
           {/* 타이머 + 특가 라벨 띠 */}
-          <div className="px-4 pt-3 pb-2.5">
-            <div className="flex items-center justify-between gap-2 mb-2.5">
+          <div className="px-4 pt-2.5 pb-2">
+            <div className="flex items-center justify-between gap-2 mb-2">
               <div className="flex items-center gap-1.5 shrink min-w-0">
-                <span className="text-[18px] shrink-0">🔥</span>
+                <span className="text-[14px] shrink-0">🔥</span>
                 <span
-                  className="text-[13px] font-black tracking-wide whitespace-nowrap"
+                  className="text-[11px] font-black tracking-wide whitespace-nowrap"
                   style={{ color: urgent ? "#FF4D6A" : "#FFD400" }}
                 >
                   마지막 특가 종료까지
@@ -1159,15 +1159,15 @@ function StickyCTA({ bundle, qty }: { bundle: BundlePreset; qty: number }) {
                 className="flex items-baseline gap-0.5 font-mono font-black tabular-nums shrink-0"
                 style={{ color: urgent ? "#FF4D6A" : "#fff" }}
               >
-                <span className="text-[22px] px-2 py-1 rounded bg-white/10 w-[42px] text-center inline-block">{mm}</span>
-                <span className="text-[20px]">:</span>
-                <span className="text-[22px] px-2 py-1 rounded bg-white/10 w-[42px] text-center inline-block">{ss}</span>
-                <span className="text-[15px] opacity-80 ml-1 w-[30px] inline-block">.{ms}</span>
+                <span className="text-[15px] px-1.5 py-0.5 rounded bg-white/10 w-[30px] text-center inline-block">{mm}</span>
+                <span className="text-[14px]">:</span>
+                <span className="text-[15px] px-1.5 py-0.5 rounded bg-white/10 w-[30px] text-center inline-block">{ss}</span>
+                <span className="text-[11px] opacity-80 ml-0.5 w-[22px] inline-block">.{ms}</span>
               </div>
             </div>
 
             {/* 잔여 바 (3분 만에 80% 소진) */}
-            <div className="h-2 w-full rounded-full bg-white/15 overflow-hidden relative">
+            <div className="h-1.5 w-full rounded-full bg-white/15 overflow-hidden relative">
               <div
                 className="h-full rounded-full transition-none"
                 style={{
@@ -1176,8 +1176,8 @@ function StickyCTA({ bundle, qty }: { bundle: BundlePreset; qty: number }) {
                     ? "linear-gradient(90deg, #FF4D6A, #FF8FA8)"
                     : `linear-gradient(90deg, ${PINK}, ${YELLOW})`,
                   boxShadow: urgent
-                    ? "0 0 10px rgba(255,77,106,0.8)"
-                    : "0 0 10px rgba(255,91,168,0.7)",
+                    ? "0 0 8px rgba(255,77,106,0.7)"
+                    : "0 0 8px rgba(255,91,168,0.6)",
                 }}
               />
             </div>
@@ -1186,21 +1186,21 @@ function StickyCTA({ bundle, qty }: { bundle: BundlePreset; qty: number }) {
           {/* 구매 버튼 */}
           <button
             onClick={() => scrollToId("buy-box")}
-            className="w-full py-4 font-black flex items-center justify-between px-5 animate-pulse-glow"
+            className="w-full py-3.5 font-black flex items-center justify-between px-4 animate-pulse-glow"
             style={{ background: PINK, color: "white" }}
           >
             <span className="text-left leading-tight">
-              <div className="text-[13px] opacity-90 font-medium mb-0.5">
+              <div className="text-[11px] opacity-90 font-medium mb-0.5">
                 {bundle.name} × {qty}
               </div>
               <div className="flex items-baseline gap-1.5">
-                <span className="text-[13px] line-through opacity-70">
+                <span className="text-[11px] line-through opacity-70">
                   {formatKRW(baseTotal)}
                 </span>
-                <span className="text-[20px]">{formatKRW(total)}</span>
+                <span className="text-[16px]">{formatKRW(total)}</span>
               </div>
             </span>
-            <span className="text-[18px] flex items-center gap-1">
+            <span className="text-[14px] flex items-center gap-1">
               지금 구매 <span>→</span>
             </span>
           </button>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 import SmartImage from "@/components/SmartImage";
 import { notFound } from "next/navigation";
 import {
@@ -10,6 +11,25 @@ import CardFilterGrid from "@/components/CardFilterGrid";
 
 export async function generateStaticParams() {
   return getAllSets().map((s) => ({ code: s.code }));
+}
+
+export async function generateMetadata({ params, searchParams }: { params: Promise<{ code: string }>; searchParams: Promise<{ edition?: string }> }): Promise<Metadata> {
+  const { code } = await params;
+  const sp = await searchParams;
+  const meta = getSetMeta(code);
+  if (!meta) return {};
+  const ed = sp.edition === "KR" ? "한국판" : sp.edition === "JP" ? "일본판" : "";
+  const name = meta.name_ko || meta.name_ja;
+  const title = `${ed ? ed + " " : ""}${name} (${code}) — 박스/팩 시세 · 힛카드 리스트`;
+  const description = `포켓몬카드 ${name}(${code}) ${ed || "일본판/한국판"} 박스·팩 정가, 힛카드 시세, 메르카리·번개장터 실시간 검색.`;
+  const canonical = `/sets/${code}${sp.edition ? `?edition=${sp.edition}` : ""}`;
+  return {
+    title,
+    description,
+    alternates: { canonical },
+    openGraph: { title, description, url: canonical, type: "website" },
+    twitter: { card: "summary_large_image", title, description },
+  };
 }
 
 export default async function SetPage({ params, searchParams }: { params: Promise<{ code: string }>; searchParams: Promise<{ edition?: string }> }) {
