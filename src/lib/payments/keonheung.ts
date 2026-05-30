@@ -203,6 +203,9 @@ export async function payWithKeonheung(input: PayInput): Promise<KeonheungPayRes
   await ensureKeonheungSDK();
   if (!window.MARU) throw new Error("MARU SDK 로드 실패");
   ensureKeonheungLayer();
+  try { window.MARU.debug?.(true); } catch {}
+  // eslint-disable-next-line no-console
+  console.log("[Keonheung] pay opts", { publicKey, mode, amount: input.amount, itemName: input.itemName });
 
   const trackId = generateTrackId("ph");
 
