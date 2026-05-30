@@ -45,7 +45,7 @@ export default async function SetPage({ params, searchParams }: { params: Promis
               width={300}
               height={300}
               containerClassName="w-[90%] h-[90%] flex items-center justify-center"
-              className="w-auto max-h-full max-w-full object-contain drop-shadow-[0_15px_40px_rgba(0,0,0,0.7)]"
+              className="w-auto max-h-full max-w-full object-contain drop-shadow-[0_8px_20px_rgba(0,0,0,0.12)]"
             />
           ) : (
             <Image
