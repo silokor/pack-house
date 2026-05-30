@@ -96,7 +96,7 @@ function S01_Hero() {
         transition={{ duration: 0.6 }}
         className="relative z-10"
       >
-        <h1 className="text-[26px] leading-[1.3] font-black mb-5">
+        <h1 className="text-[32px] leading-[1.3] font-black mb-5">
           박스 한 박스에
           <br />
           <Stroke>27만원</Stroke> 쓰고
@@ -104,7 +104,7 @@ function S01_Hero() {
           후회한 적,
         </h1>
         <h2
-          className="font-black text-[46px] leading-none mb-10 text-glow-pink"
+          className="font-black text-[56px] leading-none mb-10 text-glow-pink"
           style={{ color: PINK, fontStyle: "italic", letterSpacing: "-0.03em" }}
         >
           있으시죠?
@@ -163,7 +163,7 @@ function S01_Hero() {
           >
             MEGA 드림 EX
           </div>
-          <p className="text-[18px] font-black leading-tight">
+          <p className="text-[20px] font-black leading-tight">
             진짜 재미는 <Underline color={YELLOW}>1팩</Underline>부터.
           </p>
         </div>
@@ -173,7 +173,7 @@ function S01_Hero() {
           1팩 10장 · 일본판 랜덤 봉입
         </div>
         <div className="flex items-baseline justify-center gap-3 mb-2">
-          <span className="text-[17px] text-black/40 line-through">
+          <span className="text-[18px] text-black/40 line-through">
             {formatKRW(product.listPriceKRW)}
           </span>
           <span
@@ -183,7 +183,7 @@ function S01_Hero() {
             −43%
           </span>
         </div>
-        <div className="text-[42px] font-black mb-10 leading-none" style={{ color: "#0a0a0a" }}>
+        <div className="text-[48px] font-black mb-10 leading-none" style={{ color: "#0a0a0a" }}>
           {formatKRW(product.priceKRW)}
         </div>
 
@@ -206,7 +206,7 @@ function S02_BoxRegret() {
     <section className="px-5 py-24 relative overflow-hidden">
       <div className="text-center mb-10">
         <p className="text-[15px] text-black/70 mb-3 font-medium">박스 한 박스를 까봤더니</p>
-        <h2 className="text-[30px] font-black leading-tight">
+        <h2 className="text-[38px] font-black leading-tight">
           <span style={{ color: PINK }} className="text-glow-pink">꽝 30팩</span>,
           <br />
           힛카드 <Stroke>0장.</Stroke>
@@ -235,8 +235,8 @@ function S02_BoxRegret() {
       </div>
 
       <div className="mt-12 text-center">
-        <p className="text-[18px] font-bold leading-tight">박스 사는 사람,</p>
-        <p className="text-[26px] font-black leading-tight text-glow-pink" style={{ color: PINK }}>
+        <p className="text-[20px] font-bold leading-tight">박스 사는 사람,</p>
+        <p className="text-[32px] font-black leading-tight text-glow-pink" style={{ color: PINK }}>
           호구 됩니다.
         </p>
       </div>
@@ -251,7 +251,7 @@ function S03_FactPack() {
       <div className="inline-block text-[11px] tracking-[0.3em] text-black/50 mb-3 px-3 py-1 border border-black/15 rounded-full">
         ⚠️ WARNING
       </div>
-      <h2 className="text-[26px] font-black leading-tight mb-8">
+      <h2 className="text-[32px] font-black leading-tight mb-8">
         한 박스보다
         <br />
         <span style={{ color: PINK }}>한 팩</span>이 낫다고?
@@ -268,7 +268,7 @@ function S03_FactPack() {
         </div>
       ))}
 
-      <p className="text-[22px] font-black leading-tight mt-6">
+      <p className="text-[26px] font-black leading-tight mt-6">
         박스값 아낀 돈은
         <br />
         <Underline color={YELLOW}>당신의 다른 즐거움</Underline>에.
@@ -288,7 +288,7 @@ function S04_JapanEdition() {
       <div className="absolute inset-0 radial-burst opacity-40 pointer-events-none" />
 
       <div className="relative z-10">
-        <h2 className="text-[26px] font-black text-center leading-tight mb-6 pt-4">
+        <h2 className="text-[32px] font-black text-center leading-tight mb-6 pt-4">
           진짜 가치는
           <br />
           <span style={{ color: PINK }} className="text-glow-pink">일본판</span>입니다.
@@ -323,20 +323,20 @@ function S04_JapanEdition() {
           className="rounded-2xl p-6 mb-8 glow-yellow-border text-center"
           style={{ background: "rgba(255,212,0,0.04)" }}
         >
-          <p className="text-[17px] font-black mb-3" style={{ color: "#0a0a0a" }}>
+          <p className="text-[18px] font-black mb-3" style={{ color: "#0a0a0a" }}>
             같은 한 팩, 다른 가격.
           </p>
           <div className="text-[13px] text-black/75 leading-relaxed">
             상위 SAR 3장 기준
             <br />
-            일본판이 <b className="text-[17px]" style={{ color: PINK }}>평균 4배</b> 시세
+            일본판이 <b className="text-[18px]" style={{ color: PINK }}>평균 4배</b> 시세
             <div className="text-[12px] text-black/55 mt-2">
               📊 Mercari 거래가 / 한국 카드몰 평균가
             </div>
           </div>
         </div>
 
-        <p className="text-center text-[22px] font-black leading-tight">
+        <p className="text-center text-[26px] font-black leading-tight">
           어차피 운빨이면,
           <br />
           <span style={{ color: PINK }}>큰 한방</span>이 있는 쪽으로.
@@ -350,7 +350,7 @@ function S04_JapanEdition() {
 function S05_NoSearchPack() {
   return (
     <section className="px-5 py-24 text-center">
-      <h2 className="text-[26px] font-black leading-tight mb-6 pt-4">
+      <h2 className="text-[32px] font-black leading-tight mb-6 pt-4">
         <Stroke>서치팩 의심?</Stroke>
         <br />
         <span style={{ color: PINK }}>일본판엔 없습니다.</span>
@@ -389,7 +389,7 @@ function S05_NoSearchPack() {
       <p className="text-[13px] text-black/65 leading-relaxed mb-2">
         뜯기 전에 누가 만진 적 없는,
       </p>
-      <p className="text-[20px] font-black leading-tight">
+      <p className="text-[22px] font-black leading-tight">
         <span style={{ color: PINK }}>진짜 1팩.</span>
       </p>
     </section>
@@ -403,7 +403,7 @@ function S06_BoxVsPack() {
       <span className="block text-center text-[12px] tracking-[0.3em] text-black/50 font-bold mb-2">
         BOX vs 1 PACK
       </span>
-      <h2 className="text-[24px] font-black text-center leading-tight mb-8">
+      <h2 className="text-[28px] font-black text-center leading-tight mb-8">
         <span style={{ color: PINK }}>한 장</span>으로 끝나는
         <br />
         깔끔한 비교.
@@ -441,7 +441,7 @@ function S07_HitPreview({ onCardClick }: { onCardClick: (c: HitCard) => void }) 
         <span className="block text-[12px] tracking-[0.3em] font-bold mb-2" style={{ color: PINK }}>
           WHY THIS PACK
         </span>
-        <h2 className="text-[24px] font-black leading-tight mb-3">
+        <h2 className="text-[28px] font-black leading-tight mb-3">
           이 팩을 여는 이유는,
           <br />
           <span style={{ color: PINK }}>힛카드가 분명해서.</span>
@@ -470,7 +470,7 @@ function S07_HitPreview({ onCardClick }: { onCardClick: (c: HitCard) => void }) 
             </div>
             <div className="text-[14px] font-bold leading-tight mb-1">{c.nameKo}</div>
             <div className="text-[12px] text-black/50 mb-2">{c.cardNo}</div>
-            <div className="text-[17px] font-black leading-tight" style={{ color: PINK }}>
+            <div className="text-[18px] font-black leading-tight" style={{ color: PINK }}>
               {formatKRW(jpyToKrw(c.marketPriceJPY))}
             </div>
             <div className="text-[12px] text-black/50 mt-0.5">
@@ -510,7 +510,7 @@ function S08_FullRanking({ onCardClick }: { onCardClick: (c: HitCard) => void })
       <span className="block text-center text-[12px] tracking-[0.3em] font-bold mb-2" style={{ color: PINK }}>
         HIT CARD RANKING
       </span>
-      <h2 className="text-[24px] font-black text-center leading-tight mb-3">
+      <h2 className="text-[28px] font-black text-center leading-tight mb-3">
         메가드림 EX
         <br />
         <span style={{ color: PINK }}>힛카드 시세표</span>
@@ -587,7 +587,7 @@ function S09_LiveMarket() {
         <span className="block text-[12px] tracking-[0.3em] font-bold mb-2" style={{ color: PINK }}>
           REAL MARKET
         </span>
-        <h2 className="text-[24px] font-black leading-tight mb-3">
+        <h2 className="text-[28px] font-black leading-tight mb-3">
           저희가 부르는
           <br />
           <span style={{ color: PINK }}>가격이 아닙니다.</span>
@@ -602,7 +602,7 @@ function S09_LiveMarket() {
         <div className="text-[13px] text-black/65 mb-2 font-medium">
           메가팬텀 ex SAR — 최상위 한방
         </div>
-        <div className="text-[44px] font-black mb-1 leading-none" style={{ color: PINK }}>
+        <div className="text-[52px] font-black mb-1 leading-none" style={{ color: PINK }}>
           {formatKRW(jpyToKrw(hitCards[0].marketPriceJPY))}
         </div>
         <div className="text-[13px] text-black/65 mb-2 font-medium">
@@ -640,7 +640,7 @@ function S10_ProductInfo() {
       <span className="block text-center text-[12px] tracking-[0.3em] text-black/50 font-bold mb-2">
         PRODUCT INFO
       </span>
-      <h2 className="text-[22px] font-black text-center leading-tight mb-6">
+      <h2 className="text-[26px] font-black text-center leading-tight mb-6">
         MEGA 드림 ex는
         <br />
         어떤 팩인가요?
@@ -709,7 +709,7 @@ function S11_BundleSelect({
           🎁 구성세트
         </span>
       </div>
-      <h2 className="text-[24px] font-black text-center leading-tight mb-3">
+      <h2 className="text-[28px] font-black text-center leading-tight mb-3">
         팩만 사면 끝?
         <br />
         <span style={{ color: PINK }}>터졌을 때</span>가 진짜.
@@ -771,7 +771,7 @@ function S11_BundleSelect({
                     {formatKRW(p.basePriceKRW)}
                   </span>
                 )}
-                <span className="text-[20px] font-black leading-none" style={{ color: active ? PINK : "white" }}>
+                <span className="text-[22px] font-black leading-none" style={{ color: active ? PINK : "white" }}>
                   {formatKRW(p.finalPriceKRW)}
                 </span>
                 {save > 0 && (
@@ -823,7 +823,7 @@ function S12_TrustNotice() {
       <span className="block text-center text-[12px] tracking-[0.3em] font-bold mb-2" style={{ color: PINK }}>
         BEFORE YOU BUY
       </span>
-      <h2 className="text-[22px] font-black text-center leading-tight mb-8">
+      <h2 className="text-[26px] font-black text-center leading-tight mb-8">
         랜덤팩 구매 전,
         <br />
         꼭 확인하세요.
@@ -854,7 +854,7 @@ function S13_FAQ() {
   return (
     <section className="px-5 py-24">
       <span className="block text-center text-[12px] tracking-[0.3em] text-black/50 font-bold mb-2">FAQ</span>
-      <h2 className="text-[22px] font-black text-center mb-8">자주 묻는 질문</h2>
+      <h2 className="text-[26px] font-black text-center mb-8">자주 묻는 질문</h2>
       <div className="space-y-3">
         {qas.map((qa, i) => (
           <details key={i} className="glass-card rounded-2xl px-5 py-4 group">
@@ -926,7 +926,7 @@ function S14_BuyBox({
                 −{Math.round((1 - bundle.finalPriceKRW / bundle.basePriceKRW) * 100)}%
               </span>
             </div>
-            <div className="text-[26px] font-black leading-tight">{formatKRW(bundle.finalPriceKRW)}</div>
+            <div className="text-[32px] font-black leading-tight">{formatKRW(bundle.finalPriceKRW)}</div>
           </div>
           <div className="text-right">
             <div className="text-[11px] font-bold mb-1" style={{ color: PINK }}>LIMITED</div>
@@ -952,7 +952,7 @@ function S14_BuyBox({
               </span>
             )}
           </span>
-          <span className="text-[20px] font-black leading-none" style={{ color: PINK }}>
+          <span className="text-[22px] font-black leading-none" style={{ color: PINK }}>
             {formatKRW(total)}
           </span>
         </div>
@@ -1024,7 +1024,7 @@ function S15_FinalCTA({ bundle }: { bundle: BundlePreset }) {
       />
       <div className="relative z-10">
         <p className="text-[13px] text-black/55 mb-4">박스 안 사도 됩니다.</p>
-        <h2 className="text-[28px] font-black leading-tight mb-6">
+        <h2 className="text-[34px] font-black leading-tight mb-6">
           메가드림 EX,
           <br />
           <span style={{ color: PINK }} className="text-glow-pink">1팩</span>부터.
@@ -1038,7 +1038,7 @@ function S15_FinalCTA({ bundle }: { bundle: BundlePreset }) {
             −{Math.round((1 - bundle.finalPriceKRW / bundle.basePriceKRW) * 100)}%
           </span>
         </div>
-        <div className="text-[42px] font-black mb-3 leading-none" style={{ color: "#0a0a0a" }}>
+        <div className="text-[48px] font-black mb-3 leading-none" style={{ color: "#0a0a0a" }}>
           {formatKRW(bundle.finalPriceKRW)}
         </div>
         <p className="text-[12px] mb-6 font-bold" style={{ color: "#E60020" }}>
@@ -1234,7 +1234,7 @@ function HitCardModal({ card, onClose }: { card: HitCard; onClose: () => void })
         </div>
 
         <div className="space-y-1 mb-5 text-center">
-          <div className="text-[17px] font-black">{card.nameKo}</div>
+          <div className="text-[18px] font-black">{card.nameKo}</div>
           <div className="text-[12px] text-black/55">{card.nameJa}</div>
           <div className="text-[12px] text-black/40">{card.nameEn}</div>
         </div>
@@ -1248,7 +1248,7 @@ function HitCardModal({ card, onClose }: { card: HitCard; onClose: () => void })
 
         <div className="glass-card rounded-2xl p-5 mb-4 text-center">
           <div className="text-[13px] text-black/55 mb-3 font-medium">메루카리 거래가</div>
-          <div className="text-[30px] font-black leading-none text-glow-pink" style={{ color: PINK }}>
+          <div className="text-[38px] font-black leading-none text-glow-pink" style={{ color: PINK }}>
             {formatKRW(jpyToKrw(card.marketPriceJPY))}
           </div>
           <div className="text-[12px] text-black/55 mt-2 font-medium">
@@ -1300,7 +1300,7 @@ function CompareCard({
     >
       <div className="text-[13px] text-black/60 mb-1.5 font-bold">{title}</div>
       <div
-        className={`text-[18px] font-black mb-4 ${dim ? "line-through text-black/55" : ""}`}
+        className={`text-[20px] font-black mb-4 ${dim ? "line-through text-black/55" : ""}`}
         style={highlight ? { color: PINK } : {}}
       >
         {price}
