@@ -18,11 +18,11 @@ const RARITY_NORMALIZE: Record<string, string> = {
   "C": "C", "U": "U", "R": "R",
   "Double rare": "RR", "Double Rare": "RR",
   "Illustration rare": "AR", "Illustration Rare": "AR",
-  "Special illustration rare": "SIR", "Special Illustration Rare": "SIR",
+  "Special illustration rare": "SAR", "Special Illustration Rare": "SAR",
   "Black White Rare": "BWR",
   "Common": "C", "Uncommon": "U", "Rare": "R",
   "UR": "UR", "SAR": "SAR", "SR": "SR", "AR": "AR", "MA": "MA",
-  "MUR": "MUR", "HR": "HR", "CHR": "CHR", "CSR": "CSR", "RRR": "RRR", "SIR": "SIR",
+  "MUR": "MUR", "HR": "HR", "CHR": "CHR", "CSR": "CSR", "RRR": "RRR", "SIR": "SAR",
   "Ultra Rare": "UR", "Hyper Rare": "HR",
 };
 

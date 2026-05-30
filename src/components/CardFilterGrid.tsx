@@ -14,7 +14,7 @@ function CardImage({ src, alt }: { src: string; alt: string }) {
         alt={alt}
         fill
         sizes="(max-width: 640px) 50vw, 20vw"
-        className={`object-contain p-1.5 group-hover:scale-105 transition-transform duration-500 ${loaded ? "img-fade" : "opacity-0"}`}
+        className={`object-contain p-4 group-hover:scale-105 transition-transform duration-500 ${loaded ? "img-fade" : "opacity-0"}`}
         onLoad={() => setLoaded(true)}
         unoptimized
       />
@@ -26,7 +26,7 @@ type SortKey = "price-desc" | "price-asc" | "rarity-desc" | "num-asc" | "num-des
 type EditionFilter = "all" | "JP" | "KR";
 
 const RARITY_GROUPS = [
-  { key: "S+", label: "최상급 UR/SAR/MUR/SIR/BWR", rarities: ["UR", "SAR", "MUR", "SIR", "BWR"] },
+  { key: "S+", label: "최상급 UR/SAR/MUR/BWR", rarities: ["UR", "SAR", "MUR", "BWR"] },
   { key: "S",  label: "상급 HR/MA/SR",            rarities: ["HR", "MA", "SR"] },
   { key: "A",  label: "중상급 CSR/CHR/AR",        rarities: ["CSR", "CHR", "AR"] },
   { key: "B",  label: "고일반 RRR/RR",            rarities: ["RRR", "RR"] },
@@ -172,7 +172,7 @@ function CardTile({ card: c }: { card: CardEnriched }) {
       rel="noopener noreferrer"
       className="card-hover block bg-[var(--bg-elev)] rounded-xl overflow-hidden border border-black/5 group"
     >
-      <div className="relative aspect-[3/4] bg-black/[0.04] overflow-hidden">
+      <div className="relative aspect-[3/4] bg-gradient-to-br from-black/[0.03] via-white to-black/[0.04] overflow-hidden">
         {c.imageUrl ? (
           <CardImage src={c.imageUrl} alt={baseName} />
         ) : (
