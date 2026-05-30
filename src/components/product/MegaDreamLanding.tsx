@@ -452,28 +452,28 @@ function S07_HitPreview({ onCardClick }: { onCardClick: (c: HitCard) => void }) 
         </p>
       </div>
 
-      <div className="-mx-5 px-5 flex gap-3 overflow-x-auto hide-scrollbar snap-x snap-mandatory">
+      <div className="-mx-5 px-5 flex gap-2.5 overflow-x-auto hide-scrollbar snap-x snap-mandatory">
         {hitCards.slice(0, 5).map((c) => (
           <button
             key={c.rank}
             onClick={() => onCardClick(c)}
-            className="snap-start shrink-0 w-[200px] text-left glass-card rounded-2xl p-3"
+            className="snap-start shrink-0 w-[140px] text-left glass-card rounded-xl p-2.5"
           >
-            <div className="aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-[#f4f4f6]">
+            <div className="aspect-[3/4] mb-2 rounded-lg overflow-hidden bg-[#f4f4f6]">
               <CardImage card={c} />
             </div>
-            <div className="flex items-center gap-1.5 mb-1">
-              <span className="text-[11px] px-1.5 py-0.5 rounded font-bold" style={{ background: PINK, color: "white" }}>
+            <div className="flex items-center gap-1 mb-1">
+              <span className="text-[10px] px-1 py-0.5 rounded font-bold" style={{ background: PINK, color: "white" }}>
                 #{c.rank}
               </span>
-              <span className="text-[11px] text-black/55">{c.rarity}</span>
+              <span className="text-[10px] text-black/55">{c.rarity}</span>
             </div>
-            <div className="text-[14px] font-bold leading-tight mb-1">{c.nameKo}</div>
-            <div className="text-[12px] text-black/50 mb-2">{c.cardNo}</div>
-            <div className="text-[18px] font-black leading-tight" style={{ color: PINK }}>
+            <div className="text-[12px] font-bold leading-tight mb-0.5 truncate">{c.nameKo}</div>
+            <div className="text-[10px] text-black/50 mb-1.5">{c.cardNo}</div>
+            <div className="text-[15px] font-black leading-tight" style={{ color: PINK }}>
               {formatKRW(jpyToKrw(c.marketPriceJPY))}
             </div>
-            <div className="text-[12px] text-black/50 mt-0.5">
+            <div className="text-[10px] text-black/50 mt-0.5">
               {formatJPY(c.marketPriceJPY)}
             </div>
           </button>
