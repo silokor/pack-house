@@ -87,12 +87,12 @@ export default function CardFilterGrid({ cards, hasKR }: { cards: CardEnriched[]
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="카드명 / 넘버 검색"
-          className="flex-1 min-w-[180px] bg-[var(--bg-elev)] border border-white/10 rounded-xl px-4 py-2.5 text-[13px] placeholder-white/30 focus:outline-none focus:border-[var(--accent)]/60"
+          className="flex-1 min-w-[180px] bg-[var(--bg-elev)] border border-black/10 rounded-xl px-4 py-2.5 text-[13px] placeholder-white/30 focus:outline-none focus:border-[var(--accent)]/60"
         />
         <select
           value={sort}
           onChange={(e) => setSort(e.target.value as SortKey)}
-          className="bg-[var(--bg-elev)] border border-white/10 rounded-xl px-3 py-2.5 text-[13px] focus:outline-none cursor-pointer"
+          className="bg-[var(--bg-elev)] border border-black/10 rounded-xl px-3 py-2.5 text-[13px] focus:outline-none cursor-pointer"
         >
           <option value="price-desc">가격 높은순</option>
           <option value="price-asc">가격 낮은순</option>
@@ -128,7 +128,7 @@ export default function CardFilterGrid({ cards, hasKR }: { cards: CardEnriched[]
         })}
       </div>
 
-      <div className="mb-4 text-[12px] text-white/40">
+      <div className="mb-4 text-[12px] text-black/40">
         {filtered.length}개 표시
       </div>
 
@@ -139,7 +139,7 @@ export default function CardFilterGrid({ cards, hasKR }: { cards: CardEnriched[]
       </div>
 
       {filtered.length === 0 && (
-        <div className="text-center py-20 text-white/40 text-[14px]">조건에 맞는 카드 없음</div>
+        <div className="text-center py-20 text-black/40 text-[14px]">조건에 맞는 카드 없음</div>
       )}
     </>
   );
@@ -150,7 +150,7 @@ function FilterChip({ active, onClick, children, title }: { active: boolean; onC
     <button
       onClick={onClick}
       title={title}
-      className={`px-3 py-1.5 rounded-full text-[12px] font-bold transition-colors ${active ? "bg-[var(--accent)] text-black" : "bg-white/5 text-white/60 hover:bg-white/10"}`}
+      className={`px-3 py-1.5 rounded-full text-[12px] font-bold transition-colors ${active ? "bg-[var(--accent)] text-black" : "bg-black/[0.04] text-black/60 hover:bg-black/[0.06]"}`}
     >
       {children}
     </button>
@@ -170,13 +170,13 @@ function CardTile({ card: c }: { card: CardEnriched }) {
       href={c.marketUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="card-hover block bg-[var(--bg-elev)] rounded-xl overflow-hidden border border-white/5 group"
+      className="card-hover block bg-[var(--bg-elev)] rounded-xl overflow-hidden border border-black/5 group"
     >
-      <div className="relative aspect-[3/4] bg-black/40 overflow-hidden">
+      <div className="relative aspect-[3/4] bg-black/[0.04] overflow-hidden">
         {c.imageUrl ? (
           <CardImage src={c.imageUrl} alt={baseName} />
         ) : (
-          <div className="absolute inset-0 flex items-center justify-center text-white/20 text-[11px]">no image</div>
+          <div className="absolute inset-0 flex items-center justify-center text-black/30 text-[11px]">no image</div>
         )}
         {/* 에디션 + rarity 뱃지 */}
         <div className="absolute top-2 left-2 right-2 flex justify-between items-start">
@@ -197,18 +197,18 @@ function CardTile({ card: c }: { card: CardEnriched }) {
         </div>
       </div>
       <div className="p-3">
-        <div className="text-[10px] text-white/30 mb-0.5">#{c.num}</div>
+        <div className="text-[10px] text-black/30 mb-0.5">#{c.num}</div>
         <div className="text-[13px] font-bold truncate mb-0.5">
           <span style={{ color: editionColor }}>[{editionLabel}]</span> {c.koreanName || baseName}
         </div>
         {c.koreanName && c.koreanName !== baseName && (
-          <div className="text-[10px] text-white/30 truncate">{baseName}</div>
+          <div className="text-[10px] text-black/30 truncate">{baseName}</div>
         )}
-        <div className="bg-white/5 rounded-lg px-2.5 py-2 mt-2">
-          <div className="text-[9px] text-white/30 tracking-wider mb-0.5">PSA10 추정가</div>
+        <div className="bg-black/[0.04] rounded-lg px-2.5 py-2 mt-2">
+          <div className="text-[9px] text-black/30 tracking-wider mb-0.5">PSA10 추정가</div>
           <div className="text-[15px] font-black leading-tight">{formatKRW(price)}</div>
-          {isJP && <div className="text-[11px] text-white/50">{formatJPY(c.psa10JPY)}</div>}
-          {!isJP && <div className="text-[10px] text-white/40">(한판 보정 ~62%)</div>}
+          {isJP && <div className="text-[11px] text-black/50">{formatJPY(c.psa10JPY)}</div>}
+          {!isJP && <div className="text-[10px] text-black/40">(한판 보정 ~62%)</div>}
         </div>
       </div>
     </a>

@@ -28,7 +28,7 @@ export default function Loading() {
       {/* 카드 그리드 스켈레톤 */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
         {Array.from({ length: 10 }).map((_, i) => (
-          <div key={i} className="bg-[var(--bg-elev)] rounded-xl overflow-hidden border border-white/5">
+          <div key={i} className="bg-[var(--bg-elev)] rounded-xl overflow-hidden border border-black/5">
             <div className="aspect-[3/4] skeleton" />
             <div className="p-3">
               <div className="h-2 w-8 skeleton skeleton-box mb-2" />

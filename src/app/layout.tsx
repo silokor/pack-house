@@ -19,6 +19,13 @@ export const metadata: Metadata = {
   description: "SV1~SV11 일판/한판 카드 + 박스 리셀 시세를 한눈에",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,7 +36,7 @@ export default function RootLayout({
       lang="ko"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="searchmon-dark min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-white text-black">
         <Header />
         {children}
         <Script

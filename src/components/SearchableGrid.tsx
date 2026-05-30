@@ -50,12 +50,12 @@ export default function SearchableGrid({ sets }: { sets: SetCardItem[] }) {
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="팩 이름 / 코드 검색 (예: 메가, 151, SV10)"
-          className="w-full bg-[var(--bg-elev)] border border-white/10 rounded-2xl px-5 py-4 text-[15px] placeholder-white/30 focus:outline-none focus:border-[var(--accent)]/60 transition-colors"
+          className="w-full bg-[var(--bg-elev)] border border-black/10 rounded-2xl px-5 py-4 text-[15px] placeholder-white/30 focus:outline-none focus:border-[var(--accent)]/60 transition-colors"
         />
         {q && (
           <button
             onClick={() => setQ("")}
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-white/40 hover:text-white text-[13px]"
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-black/40 hover:text-black text-[13px]"
           >✕</button>
         )}
       </div>
@@ -66,8 +66,8 @@ export default function SearchableGrid({ sets }: { sets: SetCardItem[] }) {
         <Chip active={edition === "KR"} onClick={() => setEdition("KR")} color="#5BC0FF">🇰🇷 한판 {sets.filter(s=>s.edition==="KR").length}</Chip>
       </div>
 
-      <div className="mb-4 text-[13px] text-white/40">
-        <span className="text-white/90 font-bold text-[16px]">{filtered.length}</span> 상품
+      <div className="mb-4 text-[13px] text-black/40">
+        <span className="text-black/90 font-bold text-[16px]">{filtered.length}</span> 상품
         <span className="mx-2">·</span>
         <span className="text-[var(--accent)] font-bold">★ {filtered.reduce((a, s) => a + s.hitCount, 0)}</span> 힛카드
         {q && <span className="ml-2">· "{q}"</span>}
@@ -79,7 +79,7 @@ export default function SearchableGrid({ sets }: { sets: SetCardItem[] }) {
       </div>
 
       {filtered.length === 0 && (
-        <div className="text-center py-20 text-white/40 text-[14px]">검색 결과 없음</div>
+        <div className="text-center py-20 text-black/40 text-[14px]">검색 결과 없음</div>
       )}
     </>
   );
@@ -89,7 +89,7 @@ function Chip({ active, onClick, children, color }: { active: boolean; onClick: 
   return (
     <button
       onClick={onClick}
-      className={`px-3 py-1.5 rounded-full text-[12px] font-bold transition-colors ${active ? "text-black" : "bg-white/5 text-white/60 hover:bg-white/10"}`}
+      className={`px-3 py-1.5 rounded-full text-[12px] font-bold transition-colors ${active ? "text-black" : "bg-black/[0.04] text-black/60 hover:bg-black/[0.06]"}`}
       style={active ? { background: color || "var(--accent)" } : undefined}
     >
       {children}
@@ -119,9 +119,9 @@ function SetTile({ item: s }: { item: SetCardItem }) {
   return (
     <Link
       href={`/sets/${s.code}?edition=${s.edition}`}
-      className="card-hover group block bg-[var(--bg-elev)] rounded-xl overflow-hidden border border-white/5"
+      className="card-hover group block bg-[var(--bg-elev)] rounded-xl overflow-hidden border border-black/5"
     >
-      <div className="relative aspect-[3/4] bg-gradient-to-br from-white/5 to-black/40 flex items-center justify-center p-4">
+      <div className="relative aspect-[3/4] bg-gradient-to-br from-black/[0.02] to-black/[0.05] flex items-center justify-center p-4">
         {s.boxImage ? (
           <SmartImage
             src={s.boxImage}
@@ -161,37 +161,37 @@ function SetTile({ item: s }: { item: SetCardItem }) {
           </span>
         )}
       </div>
-      <div className="p-2.5 sm:p-3 border-t border-white/5">
-        <div className="text-[10px] text-white/30 tracking-widest mb-0.5">{s.code}</div>
+      <div className="p-2.5 sm:p-3 border-t border-black/5">
+        <div className="text-[10px] text-black/30 tracking-widest mb-0.5">{s.code}</div>
         <div className="text-[12px] sm:text-[13px] font-bold leading-tight mb-1 line-clamp-2 min-h-[28px]">
           <span style={{ color: editionColor }}>[{editionLabel}]</span> {s.nameKR_full || s.name_ko}
         </div>
 
         {/* 가격 (작게) */}
-        <div className="bg-white/5 rounded-md px-2 py-1.5 mt-1.5">
+        <div className="bg-black/[0.04] rounded-md px-2 py-1.5 mt-1.5">
           <div className="flex items-center justify-between text-[10px]">
-            <span className="text-white/40">1팩</span>
-            <span className="text-white font-bold">
+            <span className="text-black/40">1팩</span>
+            <span className="text-black font-bold">
               {packKRW ? `₩${packKRW.toLocaleString()}` : "—"}
-              {packSub && <span className="text-white/30 ml-1 font-normal">({packSub})</span>}
+              {packSub && <span className="text-black/30 ml-1 font-normal">({packSub})</span>}
             </span>
           </div>
           <div className="flex items-center justify-between text-[10px] mt-0.5">
-            <span className="text-white/40">1박스</span>
-            <span className="text-white font-bold">
+            <span className="text-black/40">1박스</span>
+            <span className="text-black font-bold">
               {boxKRW ? `₩${boxKRW.toLocaleString()}` : "—"}
-              {boxSub && <span className="text-white/30 ml-1 font-normal">({boxSub})</span>}
+              {boxSub && <span className="text-black/30 ml-1 font-normal">({boxSub})</span>}
             </span>
           </div>
           {msrpBox && (
-            <div className="flex items-center justify-between text-[9px] mt-0.5 text-white/25">
+            <div className="flex items-center justify-between text-[9px] mt-0.5 text-black/30">
               <span>정가</span>
               <span>{isJP ? `¥${msrpBox.toLocaleString()}` : `₩${msrpBox.toLocaleString()}`}</span>
             </div>
           )}
         </div>
 
-        <div className="mt-1.5 flex items-center justify-between text-[10px] text-white/30">
+        <div className="mt-1.5 flex items-center justify-between text-[10px] text-black/30">
           <span className="text-[var(--accent)]">★ {s.hitCount}</span>
           <span>{releaseDate || "—"}</span>
         </div>

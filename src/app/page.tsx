@@ -67,11 +67,11 @@ export default function HomePage() {
       <Hero />
       <main id="catalog" className="grain relative max-w-[1280px] mx-auto px-5 sm:px-8 py-12 sm:py-16">
         <header className="mb-10">
-          <div className="text-[11px] text-white/40 tracking-widest mb-2">CATALOG</div>
+          <div className="text-[11px] text-black/40 tracking-widest mb-2">CATALOG</div>
           <div className="text-[28px] sm:text-[40px] font-black tracking-tight leading-none mb-3">
             모든 <span className="text-[var(--accent)]">SV 시리즈</span> 팩
           </div>
-          <p className="text-[14px] text-white/60 max-w-xl leading-relaxed">
+          <p className="text-[14px] text-black/60 max-w-xl leading-relaxed">
             <span className="text-[#FFD400] font-bold">[일판]</span> ·{" "}
             <span className="text-[#5BC0FF] font-bold">[한판]</span> 박스 리셀가 + 힛카드 PSA10 추정.
           </p>
@@ -79,7 +79,7 @@ export default function HomePage() {
 
         <SearchableGrid sets={sets} />
 
-        <footer className="mt-20 text-center text-[12px] text-white/30 space-y-1">
+        <footer className="mt-20 text-center text-[12px] text-black/30 space-y-1">
           <div>데이터: tcgdex · pokemontcg.io · 박스: Bulbapedia</div>
           <div>시세: 일판=Kream / 한판=번개장터 (박스 리셀 기준)</div>
         </footer>
