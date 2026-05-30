@@ -1,5 +1,6 @@
 import { getAllSets, getEnrichedCards, getBoxImage, getSetExtra } from "@/lib/sets";
 import SearchableGrid, { type SetCardItem } from "@/components/SearchableGrid";
+import Hero from "@/components/Hero";
 
 export default function HomePage() {
   // 각 세트를 [일판] + (있으면) [한판] 두 카드로 분할
@@ -62,27 +63,27 @@ export default function HomePage() {
   });
 
   return (
-    <main className="grain relative max-w-[1280px] mx-auto px-5 sm:px-8 py-10 sm:py-16">
-      <header className="mb-10">
-        <div className="flex items-baseline gap-3 mb-3">
-          <div className="text-[40px] sm:text-[56px] font-black tracking-tight leading-none">
-            서치<span className="text-[var(--accent)]">몬</span>
+    <>
+      <Hero />
+      <main id="catalog" className="grain relative max-w-[1280px] mx-auto px-5 sm:px-8 py-12 sm:py-16">
+        <header className="mb-10">
+          <div className="text-[11px] text-white/40 tracking-widest mb-2">CATALOG</div>
+          <div className="text-[28px] sm:text-[40px] font-black tracking-tight leading-none mb-3">
+            모든 <span className="text-[var(--accent)]">SV 시리즈</span> 팩
           </div>
-          <div className="text-[12px] text-white/40 tracking-widest">SEARCHMON</div>
-        </div>
-        <p className="text-[14px] sm:text-[16px] text-white/60 max-w-xl leading-relaxed">
-          <span className="text-[#FFD400] font-bold">[일판]</span> ·{" "}
-          <span className="text-[#5BC0FF] font-bold">[한판]</span> 모든 SV 시리즈 팩과{" "}
-          <span className="text-[var(--accent)] font-bold">힛카드 시세</span>를 한눈에.
-        </p>
-      </header>
+          <p className="text-[14px] text-white/60 max-w-xl leading-relaxed">
+            <span className="text-[#FFD400] font-bold">[일판]</span> ·{" "}
+            <span className="text-[#5BC0FF] font-bold">[한판]</span> 박스 리셀가 + 힛카드 PSA10 추정.
+          </p>
+        </header>
 
-      <SearchableGrid sets={sets} />
+        <SearchableGrid sets={sets} />
 
-      <footer className="mt-20 text-center text-[12px] text-white/30 space-y-1">
-        <div>데이터: tcgdex · Limitless TCG · 박스: Bulbapedia</div>
-        <div>시세: 일판=Mercari / 한판=번개장터 (PSA10 추정)</div>
-      </footer>
-    </main>
+        <footer className="mt-20 text-center text-[12px] text-white/30 space-y-1">
+          <div>데이터: tcgdex · pokemontcg.io · 박스: Bulbapedia</div>
+          <div>시세: 일판=Kream / 한판=번개장터 (박스 리셀 기준)</div>
+        </footer>
+      </main>
+    </>
   );
 }
