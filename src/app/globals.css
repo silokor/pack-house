@@ -1,26 +1,140 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #ffffff;
+  --fg: #0a0a0a;
+  /* Pack House 브랜드 — 박스 톤에서 따옴 */
+  --yellow: #FFD400;
+  --pink: #FF5BA8;
+  --hot: #E60020;
+  --mint: #9CE8C7;
+  --card: #ffffff;
+  --muted: #6a6a6a;
+  --line: #e6e6e6;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-yellow: var(--yellow);
+  --color-pink: var(--pink);
+  --color-hot: var(--hot);
+  --font-sans: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.01em;
+  font-size: 17px;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* 한국어 단어 단위 줄바꿈 (음절 단위로 안 짤리게) */
+h1, h2, h3, h4, h5, h6, p, span, li, a, button, summary, div {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* 타이머 같은 숫자/모노스페이스 영역은 word-break 해제 (.05 가 짤리지 않도록) */
+.tabular-nums, .font-mono {
+  word-break: normal !important;
+  white-space: nowrap !important;
+  overflow-wrap: normal !important;
+}
+
+/* 살짝의 그레인만 — 라이트 톤이라 약하게 */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.7 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.13'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  opacity: 0.85;
+  mix-blend-mode: multiply;
+}
+
+/* 두 번째 그레인 레이어 — 더 굵게 */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n2'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.4' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='1 0 0 0 1 0 0 0 0 0.5 0 0 0 0 0.7 0 0 0 0.18 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n2)'/%3E%3C/svg%3E");
+  background-size: 420px 420px;
+  opacity: 0.6;
+  mix-blend-mode: soft-light;
+}
+
+main {
+  position: relative;
+  z-index: 2;
+}
+
+* { box-sizing: border-box; }
+
+.glow-yellow {
+  box-shadow: 0 8px 30px rgba(255, 212, 0, 0.35);
+}
+.glow-pink {
+  box-shadow: 0 10px 40px rgba(255, 91, 168, 0.4);
+}
+.glow-pink-border {
+  border: 2px solid var(--pink);
+  box-shadow: 0 8px 30px rgba(255, 91, 168, 0.18);
+}
+.glow-yellow-border {
+  border: 2px solid var(--yellow);
+  box-shadow: 0 8px 30px rgba(255, 212, 0, 0.2);
+}
+.text-glow-yellow {
+  text-shadow: 0 2px 12px rgba(255, 212, 0, 0.4);
+}
+.text-glow-pink {
+  text-shadow: 0 2px 14px rgba(255, 91, 168, 0.4);
+}
+.text-glow-red {
+  text-shadow: 0 2px 14px rgba(230, 0, 32, 0.4);
+}
+.glass-card {
+  background: #ffffff;
+  border: 1.5px solid #ececec;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+}
+.glass-card-dark {
+  /* dark accent용 카드 (일본판/CTA 강조 등) */
+  background: #0a0a0a;
+  color: #ffffff;
+  border: 1.5px solid #1a1a1a;
+}
+
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-float { animation: float-slow 4.5s ease-in-out infinite; }
+
+@keyframes pulse-glow-pink {
+  0%, 100% { box-shadow: 0 8px 24px rgba(255, 91, 168, 0.35); }
+  50% { box-shadow: 0 12px 38px rgba(255, 91, 168, 0.55); }
+}
+.animate-pulse-glow { animation: pulse-glow-pink 2.4s ease-in-out infinite; }
+
+/* 방사형 집중선 — 라이트 톤용으로 약하게 */
+.radial-burst {
+  background:
+    repeating-conic-gradient(
+      from 0deg at 50% 50%,
+      transparent 0deg,
+      transparent 14deg,
+      rgba(255, 91, 168, 0.04) 14deg,
+      rgba(255, 91, 168, 0.04) 15deg
+    );
 }

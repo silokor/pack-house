@@ -1,0 +1,83 @@
+// Prisma 스키마 초안 — 아직 마이그레이션 안 함
+// 사용 시: npx prisma init → datasource db 설정 → migrate dev
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id        String   @id
+  slug      String   @unique
+  title     String
+  priceKRW  Int
+  status    String   @default("active")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  hitCards  HitCard[]
+  inventory Inventory?
+  orders    Order[]
+}
+
+model HitCard {
+  id             String    @id @default(cuid())
+  productId      String
+  product        Product   @relation(fields: [productId], references: [id])
+  rank           Int
+  nameKo         String
+  nameJa         String
+  nameEn         String?
+  rarity         String
+  cardNo         String
+  marketPriceJPY Int?
+  imageFile      String?
+  sourceName     String?
+  sourceDate     DateTime?
+  marketUrl      String?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+}
+
+model Inventory {
+  id        String   @id @default(cuid())
+  productId String   @unique
+  product   Product  @relation(fields: [productId], references: [id])
+  quantity  Int
+  updatedAt DateTime @updatedAt
+}
+
+model Order {
+  id           String   @id @default(cuid())
+  orderNo      String   @unique
+  productId    String
+  product      Product  @relation(fields: [productId], references: [id])
+  quantity     Int
+  amountKRW    Int
+  buyerName    String?
+  buyerPhone   String?
+  buyerEmail   String?
+  shippingAddr String?
+  status       String   @default("pending")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  payments     PaymentTransaction[]
+}
+
+model PaymentTransaction {
+  id         String   @id @default(cuid())
+  orderId    String
+  order      Order    @relation(fields: [orderId], references: [id])
+  provider   String
+  paymentKey String?
+  amountKRW  Int
+  status     String
+  rawPayload Json?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}

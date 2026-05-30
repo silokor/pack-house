@@ -1,0 +1,60 @@
+{
+  "_note": "각 카드 이미지는 공식 https://www.pokemon-card.com/card-search/ 또는 일본 카드DB(pokemon-card.com)에서 카드번호 검색 후 large 이미지를 저장해 주세요.",
+  "_pack_image_url_hint": "https://www.pokemon-card.com/products/box/highclass-megadream-ex.jpg (공식 페이지 캡쳐)",
+  "cards": [
+    {
+      "file": "mega-dream-ex-pack.webp",
+      "note": "상품 팩 박스 이미지 - 공식 사이트에서 다운"
+    },
+    {
+      "file": "240-mega-gengar-ex-sar.webp",
+      "rank": 1,
+      "cardNo": "240/193"
+    },
+    {
+      "file": "234-pikachu-ex-sar.webp",
+      "rank": 2,
+      "cardNo": "234/193"
+    },
+    {
+      "file": "250-mega-dragonite-ex-mur.webp",
+      "rank": 3,
+      "cardNo": "250/193"
+    },
+    {
+      "file": "246-mega-dragonite-ex-sar.webp",
+      "rank": 4,
+      "cardNo": "246/193"
+    },
+    {
+      "file": "237-team-rockets-mewtwo-ex-sar.webp",
+      "rank": 5,
+      "cardNo": "237/193"
+    },
+    {
+      "file": "223-mega-charizard-x-ex-ma.webp",
+      "rank": 6,
+      "cardNo": "223/193"
+    },
+    {
+      "file": "242-ns-zoroark-ex-sar.webp",
+      "rank": 7,
+      "cardNo": "242/193"
+    },
+    {
+      "file": "236-ionos-bellibolt-ex-sar.webp",
+      "rank": 8,
+      "cardNo": "236/193"
+    },
+    {
+      "file": "243-marnies-grimmsnarl-ex-sar.webp",
+      "rank": 9,
+      "cardNo": "243/193"
+    },
+    {
+      "file": "230-mega-gengar-ex-ma.webp",
+      "rank": 10,
+      "cardNo": "230/193"
+    }
+  ]
+}
