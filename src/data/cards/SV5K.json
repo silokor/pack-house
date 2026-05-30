@@ -1,0 +1,394 @@
+[
+  {
+    "num": 1,
+    "name": "ロゼリア",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/001/high.png",
+    "illustrator": "Tomomi Ozaki",
+    "category": "Pokemon"
+  },
+  {
+    "num": 2,
+    "name": "ロズレイド",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/002/high.png",
+    "illustrator": "Gapao",
+    "category": "Pokemon"
+  },
+  {
+    "num": 3,
+    "name": "ナエトル",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/003/high.png",
+    "illustrator": "OKACHEKE",
+    "category": "Pokemon"
+  },
+  {
+    "num": 4,
+    "name": "ハヤシガメ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/004/high.png",
+    "illustrator": "Uninori",
+    "category": "Pokemon"
+  },
+  {
+    "num": 5,
+    "name": "ドダイトスex",
+    "rarity": "Double rare",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/005/high.png",
+    "illustrator": "PLANETA Tsuji",
+    "category": "Pokemon"
+  },
+  {
+    "num": 6,
+    "name": "シェイミ",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/006/high.png",
+    "illustrator": "Atsushi Furusawa",
+    "category": "Pokemon"
+  },
+  {
+    "num": 7,
+    "name": "モンメン",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/007/high.png",
+    "illustrator": "Kyoko Umemoto",
+    "category": "Pokemon"
+  },
+  {
+    "num": 8,
+    "name": "エルフーン",
+    "rarity": "R",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/008/high.png",
+    "illustrator": "Mizue",
+    "category": "Pokemon"
+  },
+  {
+    "num": 9,
+    "name": "クイタラン",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/009/high.png",
+    "illustrator": "Masakazu Fukuda",
+    "category": "Pokemon"
+  },
+  {
+    "num": 10,
+    "name": "ヤクデ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/010/high.png",
+    "illustrator": "Yukiko Baba",
+    "category": "Pokemon"
+  },
+  {
+    "num": 11,
+    "name": "マルヤクデ",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/011/high.png",
+    "illustrator": "Krgc",
+    "category": "Pokemon"
+  },
+  {
+    "num": 12,
+    "name": "ウガツホムラex",
+    "rarity": "Double rare",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/012/high.png",
+    "illustrator": "5ban Graphics",
+    "category": "Pokemon"
+  },
+  {
+    "num": 13,
+    "name": "ワニノコ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/013/high.png",
+    "illustrator": "MINAMINAMI Take",
+    "category": "Pokemon"
+  },
+  {
+    "num": 14,
+    "name": "アリゲイツ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/014/high.png",
+    "illustrator": "Jerky",
+    "category": "Pokemon"
+  },
+  {
+    "num": 15,
+    "name": "オーダイル",
+    "rarity": "R",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/015/high.png",
+    "illustrator": "GOSSAN",
+    "category": "Pokemon"
+  },
+  {
+    "num": 16,
+    "name": "キバニア",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/016/high.png",
+    "illustrator": "Souichirou Gunjima",
+    "category": "Pokemon"
+  },
+  {
+    "num": 17,
+    "name": "サメハダー",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/017/high.png",
+    "illustrator": "Shinji Kanda",
+    "category": "Pokemon"
+  },
+  {
+    "num": 18,
+    "name": "ケルディオ",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/018/high.png",
+    "illustrator": "satoma",
+    "category": "Pokemon"
+  },
+  {
+    "num": 19,
+    "name": "ユキハミ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/019/high.png",
+    "illustrator": "Orca",
+    "category": "Pokemon"
+  },
+  {
+    "num": 20,
+    "name": "モスノウ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/020/high.png",
+    "illustrator": "rika",
+    "category": "Pokemon"
+  },
+  {
+    "num": 21,
+    "name": "ウミディグダ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/021/high.png",
+    "illustrator": "OKUBO",
+    "category": "Pokemon"
+  },
+  {
+    "num": 63,
+    "name": "なかよしポフィン",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/063/high.png",
+    "illustrator": "AYUMI ODASHIMA",
+    "category": "Trainer"
+  },
+  {
+    "num": 74,
+    "name": "ドーミラー",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/074/high.png",
+    "illustrator": "sowsow",
+    "category": "Pokemon"
+  },
+  {
+    "num": 75,
+    "name": "ランクルス",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/075/high.png",
+    "illustrator": "Atsushi Furusawa",
+    "category": "Pokemon"
+  },
+  {
+    "num": 76,
+    "name": "ハバタクカミ",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/076/high.png",
+    "illustrator": "Takumi Wada",
+    "category": "Pokemon"
+  },
+  {
+    "num": 77,
+    "name": "ジーランス",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/077/high.png",
+    "illustrator": "Mitsuhiro Arita",
+    "category": "Pokemon"
+  },
+  {
+    "num": 78,
+    "name": "バンバドロ",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/078/high.png",
+    "illustrator": "MINAMINAMI Take",
+    "category": "Pokemon"
+  },
+  {
+    "num": 79,
+    "name": "アーボック",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/079/high.png",
+    "illustrator": "OKUBO",
+    "category": "Pokemon"
+  },
+  {
+    "num": 80,
+    "name": "ゴース",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/080/high.png",
+    "illustrator": "Mousho",
+    "category": "Pokemon"
+  },
+  {
+    "num": 81,
+    "name": "ペラップ",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/081/high.png",
+    "illustrator": "Scav",
+    "category": "Pokemon"
+  },
+  {
+    "num": 82,
+    "name": "チラーミィ",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/082/high.png",
+    "illustrator": "Shibuzoh.",
+    "category": "Pokemon"
+  },
+  {
+    "num": 83,
+    "name": "チラチーノ",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/083/high.png",
+    "illustrator": "Shibuzoh.",
+    "category": "Pokemon"
+  },
+  {
+    "num": 84,
+    "name": "ドダイトスex",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/084/high.png",
+    "illustrator": "PLANETA Tsuji",
+    "category": "Pokemon"
+  },
+  {
+    "num": 85,
+    "name": "ウガツホムラex",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/085/high.png",
+    "illustrator": "5ban Graphics",
+    "category": "Pokemon"
+  },
+  {
+    "num": 86,
+    "name": "ウネルミナモex",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/086/high.png",
+    "illustrator": "takuyoa",
+    "category": "Pokemon"
+  },
+  {
+    "num": 87,
+    "name": "ウミトリオex",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/087/high.png",
+    "illustrator": "5ban Graphics",
+    "category": "Pokemon"
+  },
+  {
+    "num": 88,
+    "name": "ゲンガーex",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/088/high.png",
+    "illustrator": "Satoshi Shirai",
+    "category": "Pokemon"
+  },
+  {
+    "num": 89,
+    "name": "タケルライコex",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/089/high.png",
+    "illustrator": "aky CG Works",
+    "category": "Pokemon"
+  },
+  {
+    "num": 90,
+    "name": "探検家の先導",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/090/high.png",
+    "illustrator": "Hideki Ishikawa",
+    "category": "Trainer"
+  },
+  {
+    "num": 91,
+    "name": "ビワ",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/091/high.png",
+    "illustrator": "GOSSAN",
+    "category": "Trainer"
+  },
+  {
+    "num": 92,
+    "name": "マツバの確信",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/092/high.png",
+    "illustrator": "GIDORA",
+    "category": "Trainer"
+  },
+  {
+    "num": 93,
+    "name": "ウガツホムラex",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/093/high.png",
+    "illustrator": "Teeziro",
+    "category": "Pokemon"
+  },
+  {
+    "num": 94,
+    "name": "ウネルミナモex",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/094/high.png",
+    "illustrator": "Teeziro",
+    "category": "Pokemon"
+  },
+  {
+    "num": 95,
+    "name": "タケルライコex",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/095/high.png",
+    "illustrator": "Teeziro",
+    "category": "Pokemon"
+  },
+  {
+    "num": 96,
+    "name": "ビワ",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/096/high.png",
+    "illustrator": "DOM",
+    "category": "Trainer"
+  },
+  {
+    "num": 97,
+    "name": "マツバの確信",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/097/high.png",
+    "illustrator": "Megumi Mizutani",
+    "category": "Trainer"
+  },
+  {
+    "num": 98,
+    "name": "ウガツホムラex",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/098/high.png",
+    "illustrator": "5ban Graphics",
+    "category": "Pokemon"
+  },
+  {
+    "num": 99,
+    "name": "ウネルミナモex",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/099/high.png",
+    "illustrator": "takuyoa",
+    "category": "Pokemon"
+  },
+  {
+    "num": 100,
+    "name": "タケルライコex",
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV5K/100/high.png",
+    "illustrator": "aky CG Works",
+    "category": "Pokemon"
+  }
+]

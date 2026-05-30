@@ -1,0 +1,786 @@
+[
+  {
+    "num": 1,
+    "name": "クヌギダマ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/001/high.png",
+    "illustrator": "YASHIRO Nanaco",
+    "category": "Pokemon"
+  },
+  {
+    "num": 2,
+    "name": "キノココ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/002/high.png",
+    "illustrator": "IKEDA Saki",
+    "category": "Pokemon"
+  },
+  {
+    "num": 3,
+    "name": "キノガッサ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/003/high.png",
+    "illustrator": "nisimono",
+    "category": "Pokemon"
+  },
+  {
+    "num": 4,
+    "name": "カットロトム",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/004/high.png",
+    "illustrator": "Rianti Hidayat",
+    "category": "Pokemon"
+  },
+  {
+    "num": 5,
+    "name": "カリキリ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/005/high.png",
+    "illustrator": "mashu",
+    "category": "Pokemon"
+  },
+  {
+    "num": 6,
+    "name": "ラランテス",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/006/high.png",
+    "illustrator": "Masako Tomii",
+    "category": "Pokemon"
+  },
+  {
+    "num": 7,
+    "name": "ロケット団のサッチムシ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/007/high.png",
+    "illustrator": "buchi",
+    "category": "Pokemon"
+  },
+  {
+    "num": 8,
+    "name": "ロケット団のタマンチュラ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/008/high.png",
+    "illustrator": "Saboteri",
+    "category": "Pokemon"
+  },
+  {
+    "num": 9,
+    "name": "ロケット団のワナイダー",
+    "rarity": "R",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/009/high.png",
+    "illustrator": "Taiga Kasai",
+    "category": "Pokemon"
+  },
+  {
+    "num": 10,
+    "name": "ミニーブ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/010/high.png",
+    "illustrator": "Yuka Morii",
+    "category": "Pokemon"
+  },
+  {
+    "num": 11,
+    "name": "オリーニョ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/011/high.png",
+    "illustrator": "Felicia Chen",
+    "category": "Pokemon"
+  },
+  {
+    "num": 12,
+    "name": "オリーヴァex",
+    "rarity": "Double rare",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/012/high.png",
+    "illustrator": "PLANETA Tsuji",
+    "category": "Pokemon"
+  },
+  {
+    "num": 13,
+    "name": "ガーディ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/013/high.png",
+    "illustrator": "ryoma uratsuka",
+    "category": "Pokemon"
+  },
+  {
+    "num": 14,
+    "name": "ウインディ",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/014/high.png",
+    "illustrator": "Nisota Niso",
+    "category": "Pokemon"
+  },
+  {
+    "num": 15,
+    "name": "ロケット団のファイヤーex",
+    "rarity": "Double rare",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/015/high.png",
+    "illustrator": "5ban Graphics",
+    "category": "Pokemon"
+  },
+  {
+    "num": 16,
+    "name": "ロケット団のデルビル",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/016/high.png",
+    "illustrator": "Krgc",
+    "category": "Pokemon"
+  },
+  {
+    "num": 17,
+    "name": "ロケット団のヘルガー",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/017/high.png",
+    "illustrator": "Anesaki Dynamic",
+    "category": "Pokemon"
+  },
+  {
+    "num": 18,
+    "name": "アチャモ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/018/high.png",
+    "illustrator": "Tika Matsuno",
+    "category": "Pokemon"
+  },
+  {
+    "num": 19,
+    "name": "ワカシャモ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/019/high.png",
+    "illustrator": "yuu",
+    "category": "Pokemon"
+  },
+  {
+    "num": 20,
+    "name": "バシャーモ",
+    "rarity": "R",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/020/high.png",
+    "illustrator": "Kazumasa Yasukuni",
+    "category": "Pokemon"
+  },
+  {
+    "num": 21,
+    "name": "ヒートロトム",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/021/high.png",
+    "illustrator": "Dsuke",
+    "category": "Pokemon"
+  },
+  {
+    "num": 22,
+    "name": "ロケット団のフリーザー",
+    "rarity": "R",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/022/high.png",
+    "illustrator": "Mitsuhiro Arita",
+    "category": "Pokemon"
+  },
+  {
+    "num": 23,
+    "name": "パールル",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/023/high.png",
+    "illustrator": "Miki Tanaka",
+    "category": "Pokemon"
+  },
+  {
+    "num": 24,
+    "name": "ハンテール",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/024/high.png",
+    "illustrator": "Scav",
+    "category": "Pokemon"
+  },
+  {
+    "num": 25,
+    "name": "サクラビス",
+    "rarity": "R",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/025/high.png",
+    "illustrator": "Naoyo Kimura",
+    "category": "Pokemon"
+  },
+  {
+    "num": 26,
+    "name": "ユキカブリ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/026/high.png",
+    "illustrator": "Tomokazu Komiya",
+    "category": "Pokemon"
+  },
+  {
+    "num": 27,
+    "name": "ユキノオー",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/027/high.png",
+    "illustrator": "kamonabe",
+    "category": "Pokemon"
+  },
+  {
+    "num": 28,
+    "name": "ウォッシュロトム",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/028/high.png",
+    "illustrator": "miki kudo",
+    "category": "Pokemon"
+  },
+  {
+    "num": 29,
+    "name": "サシカマス",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/029/high.png",
+    "illustrator": "OKUBO",
+    "category": "Pokemon"
+  },
+  {
+    "num": 30,
+    "name": "カマスジョー",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/030/high.png",
+    "illustrator": "Kyoko Umemoto",
+    "category": "Pokemon"
+  },
+  {
+    "num": 31,
+    "name": "アルクジラ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/031/high.png",
+    "illustrator": "sui",
+    "category": "Pokemon"
+  },
+  {
+    "num": 32,
+    "name": "ハルクジラex",
+    "rarity": "Double rare",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/032/high.png",
+    "illustrator": "kawayoo",
+    "category": "Pokemon"
+  },
+  {
+    "num": 33,
+    "name": "ロケット団のサンダー",
+    "rarity": "R",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/033/high.png",
+    "illustrator": "Nurikabe",
+    "category": "Pokemon"
+  },
+  {
+    "num": 34,
+    "name": "ロケット団のメリープ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/034/high.png",
+    "illustrator": "Teeziro",
+    "category": "Pokemon"
+  },
+  {
+    "num": 35,
+    "name": "ロケット団のモココ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/035/high.png",
+    "illustrator": "Jerky",
+    "category": "Pokemon"
+  },
+  {
+    "num": 36,
+    "name": "ロケット団のデンリュウ",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/036/high.png",
+    "illustrator": "Shiburingaru",
+    "category": "Pokemon"
+  },
+  {
+    "num": 37,
+    "name": "ロケット団のスリープ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/037/high.png",
+    "illustrator": "matazo",
+    "category": "Pokemon"
+  },
+  {
+    "num": 38,
+    "name": "ロケット団のスリーパー",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/038/high.png",
+    "illustrator": "Yuya Oka",
+    "category": "Pokemon"
+  },
+  {
+    "num": 39,
+    "name": "ロケット団のミュウツーex",
+    "rarity": "Double rare",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/039/high.png",
+    "illustrator": "aky CG Works",
+    "category": "Pokemon"
+  },
+  {
+    "num": 40,
+    "name": "ロケット団のソーナンス",
+    "rarity": "R",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/040/high.png",
+    "illustrator": "Kazumasa Yasukuni",
+    "category": "Pokemon"
+  },
+  {
+    "num": 41,
+    "name": "ロケット団のリーシャン",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/041/high.png",
+    "illustrator": "Mina Nakai",
+    "category": "Pokemon"
+  },
+  {
+    "num": 42,
+    "name": "ロケット団のミミッキュ",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/042/high.png",
+    "illustrator": "DOM",
+    "category": "Pokemon"
+  },
+  {
+    "num": 43,
+    "name": "ロケット団のレドームシ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/043/high.png",
+    "illustrator": "Scav",
+    "category": "Pokemon"
+  },
+  {
+    "num": 44,
+    "name": "ロケット団のイオルブ",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/044/high.png",
+    "illustrator": "Shin Nagasawa",
+    "category": "Pokemon"
+  },
+  {
+    "num": 45,
+    "name": "マンキー",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/045/high.png",
+    "illustrator": "Ayako Ozaki",
+    "category": "Pokemon"
+  },
+  {
+    "num": 46,
+    "name": "オコリザル",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/046/high.png",
+    "illustrator": "GOTO minori",
+    "category": "Pokemon"
+  },
+  {
+    "num": 47,
+    "name": "コノヨザル",
+    "rarity": "R",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/047/high.png",
+    "illustrator": "Shiburingaru",
+    "category": "Pokemon"
+  },
+  {
+    "num": 48,
+    "name": "ロケット団のヨーギラス",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/048/high.png",
+    "illustrator": "Kuroimori",
+    "category": "Pokemon"
+  },
+  {
+    "num": 49,
+    "name": "ロケット団のサナギラス",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/049/high.png",
+    "illustrator": "Izucch",
+    "category": "Pokemon"
+  },
+  {
+    "num": 50,
+    "name": "ロケット団のバンギラス",
+    "rarity": "R",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/050/high.png",
+    "illustrator": "Ryuta Fuse",
+    "category": "Pokemon"
+  },
+  {
+    "num": 51,
+    "name": "ノズパス",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/051/high.png",
+    "illustrator": "Oku",
+    "category": "Pokemon"
+  },
+  {
+    "num": 52,
+    "name": "ダイノーズ",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/052/high.png",
+    "illustrator": "sowsow",
+    "category": "Pokemon"
+  },
+  {
+    "num": 53,
+    "name": "アサナン",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/053/high.png",
+    "illustrator": "MINAMINAMI Take",
+    "category": "Pokemon"
+  },
+  {
+    "num": 54,
+    "name": "チャーレム",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/054/high.png",
+    "illustrator": "Whisker",
+    "category": "Pokemon"
+  },
+  {
+    "num": 55,
+    "name": "レジロックex",
+    "rarity": "Double rare",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/055/high.png",
+    "illustrator": "Nisota Niso",
+    "category": "Pokemon"
+  },
+  {
+    "num": 56,
+    "name": "ロケット団のアーボ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/056/high.png",
+    "illustrator": "KEIICHIRO ITO",
+    "category": "Pokemon"
+  },
+  {
+    "num": 57,
+    "name": "ロケット団のアーボック",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/057/high.png",
+    "illustrator": "Teeziro",
+    "category": "Pokemon"
+  },
+  {
+    "num": 58,
+    "name": "ロケット団のニドラン♀",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/058/high.png",
+    "illustrator": "REND",
+    "category": "Pokemon"
+  },
+  {
+    "num": 59,
+    "name": "ロケット団のニドリーナ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/059/high.png",
+    "illustrator": "Taiga Kasai",
+    "category": "Pokemon"
+  },
+  {
+    "num": 60,
+    "name": "ロケット団のニドクイン",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/060/high.png",
+    "illustrator": "hncl",
+    "category": "Pokemon"
+  },
+  {
+    "num": 61,
+    "name": "ロケット団のニドラン♂",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/061/high.png",
+    "illustrator": "buchi",
+    "category": "Pokemon"
+  },
+  {
+    "num": 62,
+    "name": "ロケット団のニドリーノ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/062/high.png",
+    "illustrator": "KEIICHIRO ITO",
+    "category": "Pokemon"
+  },
+  {
+    "num": 63,
+    "name": "ロケット団のニドキングex",
+    "rarity": "Double rare",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/063/high.png",
+    "illustrator": "5ban Graphics",
+    "category": "Pokemon"
+  },
+  {
+    "num": 64,
+    "name": "ロケット団のズバット",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/064/high.png",
+    "illustrator": "toi8",
+    "category": "Pokemon"
+  },
+  {
+    "num": 65,
+    "name": "ロケット団のゴルバット",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/065/high.png",
+    "illustrator": "AKIRA EGAWA",
+    "category": "Pokemon"
+  },
+  {
+    "num": 66,
+    "name": "ロケット団のクロバットex",
+    "rarity": "Double rare",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/066/high.png",
+    "illustrator": "5ban Graphics",
+    "category": "Pokemon"
+  },
+  {
+    "num": 67,
+    "name": "ロケット団のベトベター",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/067/high.png",
+    "illustrator": "Mousho",
+    "category": "Pokemon"
+  },
+  {
+    "num": 68,
+    "name": "ロケット団のベトベトン",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/068/high.png",
+    "illustrator": "Uta",
+    "category": "Pokemon"
+  },
+  {
+    "num": 69,
+    "name": "ロケット団のドガース",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/069/high.png",
+    "illustrator": "kodama",
+    "category": "Pokemon"
+  },
+  {
+    "num": 70,
+    "name": "ロケット団のマタドガス",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/070/high.png",
+    "illustrator": "matazo",
+    "category": "Pokemon"
+  },
+  {
+    "num": 71,
+    "name": "ロケット団のヤミカラス",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/071/high.png",
+    "illustrator": "Mugi Hamada",
+    "category": "Pokemon"
+  },
+  {
+    "num": 72,
+    "name": "ロケット団のニューラ",
+    "rarity": "R",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/072/high.png",
+    "illustrator": "GIDORA",
+    "category": "Pokemon"
+  },
+  {
+    "num": 73,
+    "name": "フォレトス",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/073/high.png",
+    "illustrator": "Wintr Wandr",
+    "category": "Pokemon"
+  },
+  {
+    "num": 74,
+    "name": "エアームド",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/074/high.png",
+    "illustrator": "Shin Nagasawa",
+    "category": "Pokemon"
+  },
+  {
+    "num": 75,
+    "name": "ザマゼンタ",
+    "rarity": "R",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/075/high.png",
+    "illustrator": "Mitsuhiro Arita",
+    "category": "Pokemon"
+  },
+  {
+    "num": 76,
+    "name": "ロケット団のコラッタ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/076/high.png",
+    "illustrator": "Dsuke",
+    "category": "Pokemon"
+  },
+  {
+    "num": 77,
+    "name": "ロケット団のラッタ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/077/high.png",
+    "illustrator": "Uninori",
+    "category": "Pokemon"
+  },
+  {
+    "num": 78,
+    "name": "ロケット団のニャース",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/078/high.png",
+    "illustrator": "Megumi Mizutani",
+    "category": "Pokemon"
+  },
+  {
+    "num": 79,
+    "name": "ロケット団のペルシアンex",
+    "rarity": "Double rare",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/079/high.png",
+    "illustrator": "5ban Graphics",
+    "category": "Pokemon"
+  },
+  {
+    "num": 80,
+    "name": "ガルーラ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/080/high.png",
+    "illustrator": "Sanosuke Sakuma",
+    "category": "Pokemon"
+  },
+  {
+    "num": 81,
+    "name": "ロケット団のポリゴン",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/081/high.png",
+    "illustrator": "Oswaldo KATO",
+    "category": "Pokemon"
+  },
+  {
+    "num": 82,
+    "name": "ロケット団のポリゴン2",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/082/high.png",
+    "illustrator": "Takeshi Nakamura",
+    "category": "Pokemon"
+  },
+  {
+    "num": 83,
+    "name": "ロケット団のポリゴンZ",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/083/high.png",
+    "illustrator": "Anesaki Dynamic",
+    "category": "Pokemon"
+  },
+  {
+    "num": 84,
+    "name": "スバメ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/084/high.png",
+    "illustrator": "Ayako Ozaki",
+    "category": "Pokemon"
+  },
+  {
+    "num": 85,
+    "name": "オオスバメ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/085/high.png",
+    "illustrator": "Souichirou Gunjima",
+    "category": "Pokemon"
+  },
+  {
+    "num": 86,
+    "name": "イキリンコ",
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/086/high.png",
+    "illustrator": "Julie Hang",
+    "category": "Pokemon"
+  },
+  {
+    "num": 87,
+    "name": "ロケット団のおじゃまロボ",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/087/high.png",
+    "illustrator": "Toyste Beach",
+    "category": "Trainer"
+  },
+  {
+    "num": 88,
+    "name": "ロケット団のスーパーボール",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/088/high.png",
+    "illustrator": "Toyste Beach",
+    "category": "Trainer"
+  },
+  {
+    "num": 89,
+    "name": "ロケット団のびっくりボム",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/089/high.png",
+    "illustrator": "Toyste Beach",
+    "category": "Trainer"
+  },
+  {
+    "num": 90,
+    "name": "ロケット団のレシーバー",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/090/high.png",
+    "illustrator": "inose yukie",
+    "category": "Trainer"
+  },
+  {
+    "num": 91,
+    "name": "ロケット団のアテナ",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/091/high.png",
+    "illustrator": "hncl",
+    "category": "Trainer"
+  },
+  {
+    "num": 92,
+    "name": "ロケット団のアポロ",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/092/high.png",
+    "illustrator": "Hideki Ishikawa",
+    "category": "Trainer"
+  },
+  {
+    "num": 93,
+    "name": "ロケット団のサカキ",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/093/high.png",
+    "illustrator": "akagi",
+    "category": "Trainer"
+  },
+  {
+    "num": 94,
+    "name": "ロケット団のラムダ",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/094/high.png",
+    "illustrator": "GOSSAN",
+    "category": "Trainer"
+  },
+  {
+    "num": 95,
+    "name": "ロケット団のランス",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/095/high.png",
+    "illustrator": "Naoki Saito",
+    "category": "Trainer"
+  },
+  {
+    "num": 96,
+    "name": "ロケット団の監視塔",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/096/high.png",
+    "illustrator": "AYUMI ODASHIMA",
+    "category": "Trainer"
+  },
+  {
+    "num": 97,
+    "name": "ロケット団のファクトリー",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/097/high.png",
+    "illustrator": "imoniii",
+    "category": "Trainer"
+  },
+  {
+    "num": 98,
+    "name": "ロケット団エネルギー",
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV10/098/high.png",
+    "illustrator": null,
+    "category": "Energy"
+  }
+]
