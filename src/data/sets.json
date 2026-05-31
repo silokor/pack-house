@@ -173,5 +173,26 @@
     "name_ko": "블랙 볼트",
     "name_full": "Black Bolt (SV11B)",
     "cardCount": 174
+  },
+  {
+    "code": "M2",
+    "name_ja": "M2 インフェルノX",
+    "name_ko": "인페르노X",
+    "name_full": "Inferno X (M2)",
+    "cardCount": 116
+  },
+  {
+    "code": "M2a",
+    "name_ja": "M2a MEGAドリームex",
+    "name_ko": "메가 드림 ex",
+    "name_full": "Mega Dream ex (M2a)",
+    "cardCount": 250
+  },
+  {
+    "code": "M4",
+    "name_ja": "M4 ニンジャスピナー",
+    "name_ko": "닌자스피너",
+    "name_full": "Ninja Spinner (M4)",
+    "cardCount": 120
   }
 ]

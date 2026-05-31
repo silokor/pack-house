@@ -5,7 +5,7 @@ import Link from "next/link";
 const PINK = "#FF5BA8";
 
 const MENU = [
-  { href: "/", label: "팩 카탈로그", desc: "SV1~SV11 25팩" },
+  { href: "/", label: "팩 카탈로그", desc: "SV1~SV11 + MEGA 시리즈" },
   { href: "/products/mega-dream-ex", label: "🔥 메가드림 ex 박스", desc: "한정 판매 진행중" },
   { href: "#", label: "리셀 시세표", desc: "준비중" },
   { href: "#", label: "About", desc: "Pack House" },

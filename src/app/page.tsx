@@ -69,7 +69,7 @@ export default function HomePage() {
         <header className="mb-10">
           <div className="text-[11px] text-black/40 tracking-widest mb-2">CATALOG</div>
           <div className="text-[28px] sm:text-[40px] font-black tracking-tight leading-none mb-3">
-            모든 <span className="text-[var(--accent)]">SV 시리즈</span> 팩
+            <span className="text-[var(--accent)]">SV + MEGA</span> 전 시리즈 팩
           </div>
           <p className="text-[14px] text-black/60 max-w-xl leading-relaxed">
             <span className="text-[#FFD400] font-bold">[일판]</span> ·{" "}

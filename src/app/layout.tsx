@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 const SITE_URL = "https://pack-house-pink.vercel.app";
 const SITE_NAME = "Pack House";
-const SITE_TITLE = "Pack House — 일본판 포켓몬카드 리셀 시세 · SV1~SV11 카탈로그";
+const SITE_TITLE = "Pack House — 일본판 포켓몬카드 리셀 시세 · SV + MEGA 카탈로그";
 const SITE_DESC =
   "일본판/한국판 포켓몬카드 SV1~SV11 전 시리즈 박스·팩 시세, 힛카드 리스트, 메가드림 ex 하이클래스팩 17,000원 단팩 판매. 메르카리·번개장터 실시간 시세 비교.";
 

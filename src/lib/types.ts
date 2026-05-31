@@ -7,7 +7,7 @@ const POKE_NAMES = pokeNames as Record<string, string>;
 const TRAINER_NAMES: Record<string, string> = {
   // 서포트
   "博士の研究": "박사의 연구",
-  "ナンジャモ": "이로치미디어",
+  "ナンジャモ": "모야모",
   "ハイパーボール": "하이퍼볼",
   "モンスターボール": "몬스터볼",
   "ネストボール": "네스트볼",
