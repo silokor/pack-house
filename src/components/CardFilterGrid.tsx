@@ -1,14 +1,35 @@
 "use client";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import type { CardEnriched, Edition } from "@/lib/types";
 import { formatKRW, formatJPY } from "@/lib/types";
+
+function Spinner({ size = 32, label }: { size?: number; label?: string }) {
+  return (
+    <div className="flex flex-col items-center gap-2">
+      <div
+        className="animate-spin rounded-full border-[3px] border-black/10 border-t-[var(--accent)]"
+        style={{ width: size, height: size }}
+        role="status"
+        aria-label="로딩"
+      />
+      {label && <div className="text-[11px] text-black/40">{label}</div>}
+    </div>
+  );
+}
 
 function CardImage({ src, alt }: { src: string; alt: string }) {
   const [loaded, setLoaded] = useState(false);
   return (
     <>
-      {!loaded && <div className="absolute inset-0 skeleton" />}
+      {!loaded && (
+        <>
+          <div className="absolute inset-0 skeleton" />
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <Spinner size={24} />
+          </div>
+        </>
+      )}
       <Image
         src={src}
         alt={alt}
@@ -37,6 +58,13 @@ export default function CardFilterGrid({ cards, hasKR }: { cards: CardEnriched[]
   const [activeGroups, setActiveGroups] = useState<Set<string>>(new Set());
   const [edition, setEdition] = useState<EditionFilter>("all");
   const [q, setQ] = useState("");
+  const [ready, setReady] = useState(false);
+
+  // 카드 데이터가 많을 때 초기 페인트 후 한 프레임 양보 → 스피너 표시
+  useEffect(() => {
+    const t = requestAnimationFrame(() => setReady(true));
+    return () => cancelAnimationFrame(t);
+  }, []);
 
   const filtered = useMemo(() => {
     let r = cards;
@@ -132,13 +160,19 @@ export default function CardFilterGrid({ cards, hasKR }: { cards: CardEnriched[]
         {filtered.length}개 표시
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-5">
-        {filtered.map((c, i) => (
-          <CardTile key={`${c.edition}-${c.num}-${i}`} card={c} />
-        ))}
-      </div>
+      {!ready ? (
+        <div className="flex flex-col items-center justify-center py-24">
+          <Spinner size={36} label="카드 데이터 불러오는 중…" />
+        </div>
+      ) : (
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-5">
+          {filtered.map((c, i) => (
+            <CardTile key={`${c.edition}-${c.num}-${i}`} card={c} />
+          ))}
+        </div>
+      )}
 
-      {filtered.length === 0 && (
+      {ready && filtered.length === 0 && (
         <div className="text-center py-20 text-black/40 text-[14px]">조건에 맞는 카드 없음</div>
       )}
     </>
